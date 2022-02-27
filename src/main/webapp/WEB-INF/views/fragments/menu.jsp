@@ -23,7 +23,7 @@
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link.jespaepae" action="https://coderadio.freecodecamp.org/"/>
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link.pabramber" action="https://www.fromsoftware.jp/ww/"/>
 			<acme:menu-suboption code="77942016F: Pinero Calera, Borja" action="http://www.youtube.com"/>
-			<acme:menu-suboption code="08371106A: Gallardo Roco, Raúl" action="https://www.marca.com"/>
+			<acme:menu-suboption code="master.menu.anonymous.favourite-link.raugalroc" action="https://www.marca.com"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
