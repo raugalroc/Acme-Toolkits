@@ -18,8 +18,8 @@
 
 <acme:footer-panel>
 	<acme:footer-subpanel code="master.footer.title.about">
-		<acme:footer-option icon="fa fa-buildings" code="master.footer.label.company" action="/master/company"/>
-		<acme:footer-option icon="fa fa-file-certificate" code="master.footer.label.license" action="/master/license"/>		
+		<acme:footer-option icon="far fa-building" code="master.footer.label.company" action="/master/company"/>
+		<acme:footer-option icon="far fa-file-code" code="master.footer.label.license" action="/master/license"/>		
 	</acme:footer-subpanel>
 
 	<acme:footer-subpanel code="master.footer.title.follow">
