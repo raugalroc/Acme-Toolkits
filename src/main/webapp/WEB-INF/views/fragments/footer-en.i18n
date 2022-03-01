@@ -11,11 +11,11 @@
 master.footer.title.about = About us
 master.footer.label.company = Company
 master.footer.label.license = License
-master.footer.title.social = Social
+master.footer.title.follow = Follow Us
 master.footer.url.linkedin = http://www.linkedin.com
 master.footer.label.linked-in = Linked-In
-master.footer.url.twitter = http://www.twitter.com
-master.footer.label.twitter = Twitter
+master.footer.url.instagram = https://www.instagram.com
+master.footer.label.instagram = Instagram
 master.footer.title.languages = Languages
 master.footer.label.english = English
 master.footer.label.spanish = Spanish

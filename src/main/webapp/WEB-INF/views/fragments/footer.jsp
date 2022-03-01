@@ -18,15 +18,15 @@
 
 <acme:footer-panel>
 	<acme:footer-subpanel code="master.footer.title.about">
-		<acme:footer-option icon="fa fa-building" code="master.footer.label.company" action="/master/company"/>
-		<acme:footer-option icon="fa fa-file" code="master.footer.label.license" action="/master/license"/>		
+		<acme:footer-option icon="far fa-building" code="master.footer.label.company" action="/master/company"/>
+		<acme:footer-option icon="far fa-file-code" code="master.footer.label.license" action="/master/license"/>		
 	</acme:footer-subpanel>
 
-	<acme:footer-subpanel code="master.footer.title.social">
+	<acme:footer-subpanel code="master.footer.title.follow">
 		<acme:message var="linkedinUrl" code="master.footer.url.linkedin"/>
 		<acme:footer-option icon="fab fa-linkedin" code="master.footer.label.linked-in" action="${linkedinUrl}" newTab="true"/>
-		<acme:message var="twitterUrl" code="master.footer.url.twitter"/>
-		<acme:footer-option icon="fab fa-twitter" code="master.footer.label.twitter" action="${twitterUrl}" newTab="true"/>
+		<acme:message var="instagramUrl" code="master.footer.url.instagram"/>
+		<acme:footer-option icon="fab fa-instagram" code="master.footer.label.instagram" action="${instagramUrl}" newTab="true"/>
 	</acme:footer-subpanel>
 
 	<acme:footer-subpanel code="master.footer.title.languages">
