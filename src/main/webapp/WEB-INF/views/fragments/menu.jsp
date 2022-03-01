@@ -21,6 +21,11 @@
 		<acme:menu-option code="master.menu.anonymous" access="isAnonymous()">
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link" action="http://www.example.com/"/>
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link.jespaepae" action="https://coderadio.freecodecamp.org/"/>
+			<acme:menu-suboption code="master.menu.anonymous.favourite-link.pabramber" action="https://www.fromsoftware.jp/ww/"/>
+			<acme:menu-suboption code="77942016F: Pinero Calera, Borja" action="http://www.youtube.com"/>
+			<acme:menu-suboption code="master.menu.anonymous.favourite-link.raugalroc" action="https://www.marca.com"/>
+			<acme:menu-suboption code="master.menu.anonymous.favourite-link.juaortgue" action="https://www.game.es"/>
+			
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
