@@ -19,11 +19,14 @@ master.menu.sign-out = Salir
 
 master.menu.anonymous = Anónimo
 master.menu.anonymous.favourite-link = Enlace favorito
+
 master.menu.anonymous.favourite-link.jespaepae = 17485225G: Páez Páez, Jesús
 master.menu.anonymous.favourite-link.pabramber = 08898565A: Ramos Berciano, Pablo
 master.menu.anonymous.favourite-link.raugalroc = 08371106A: Gallardo Roco, Raúl
 master.menu.anonymous.favourite-link.borpincal = 77942016F: Piñero Calera, Borja
 master.menu.anonymous.favourite-link.juaortgue = 53964209E: Ortiz Guerra, Juan Antonio
+master.menu.anonymous.favourite-link.nurgomari = 51210808C: Gómez Arias, Nuria
+
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrador
