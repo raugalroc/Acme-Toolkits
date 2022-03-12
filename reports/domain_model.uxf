@@ -13,8 +13,8 @@
 &lt;&lt;Role&gt;&gt;
 Inventor
 --
-+ company: String {NotBlank, Length(0, 101)}
-+ statement: String {NotBlank, Length(0, 256)}
++ company: String {NotBlank, Length(0, 100)}
++ statement: String {NotBlank, Length(0, 255)}
 + link: String {URL}</panel_attributes>
     <additional_attributes/>
   </element>
@@ -30,8 +30,8 @@ Inventor
 &lt;&lt;Role&gt;&gt;
 Patron
 --
-+ company: String {NotBlank, Length(0, 101)}
-+ statement: String {NotBlank, Length(0, 256)}
++ company: String {NotBlank, Length(0, 100)}
++ statement: String {NotBlank, Length(0, 255)}
 + link: String {URL}</panel_attributes>
     <additional_attributes/>
   </element>
@@ -58,18 +58,18 @@ Chirp
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1632</x>
+      <x>1552</x>
       <y>760</y>
-      <w>256</w>
+      <w>336</w>
       <h>112</h>
     </coordinates>
     <panel_attributes>bg=green
 &lt;&lt;Entity&gt;&gt;
 Announcement 
 --
-+ creationMoment: DateTime {NotNull, Past}
-+ title: String {NotBlank, Length(0, 101)}
-+ body: String {NotBlank, Length(0, 256)}
++ creationMoment: Date {Temporal(TIMESTAMP), NotNull, Past}
++ title: String {NotBlank, Length(0, 100)}
++ body: String {NotBlank, Length(0, 255)}
 + critic: Boolean {NotNull}
 + link: String {URL}</panel_attributes>
     <additional_attributes/>
@@ -86,10 +86,10 @@ Announcement
 &lt;&lt;Entity&gt;&gt;
 Component
 --
-+ name: String {NotBlank, Length(0, 101)}
++ name: String {NotBlank, Length(0, 100)}
 + code: String {NotNull, Pattern(^[A-Z]{3}-[0-9]{3}(-[A-Z])?$), Unique}
-+ technology: String {NotBlank, Length(0, 101)}
-+ description: String  {NotBlank, Length(0, 256)}
++ technology: String {NotBlank, Length(0, 100)}
++ description: String  {NotBlank, Length(0, 255)}
 + retailPrice: Money {NotNull}
 + link: String {URL}</panel_attributes>
     <additional_attributes/>
@@ -107,9 +107,9 @@ Component
 Toolkit
 --
 + code: String {NotNull, Pattern(^[A-Z]{3}-[0-9]{3}(-[A-Z])?$), Unique}
-+ title: String {NotBlank, Length(0, 101)}
-+ description: String  {NotBlank, Length(0, 256)}
-+ assemblyNotes: String  {NotBlank, Length(0, 256)}
++ title: String {NotBlank, Length(0, 100)}
++ description: String  {NotBlank, Length(0, 255)}
++ assemblyNotes: String  {NotBlank, Length(0, 255)}
 + link: String {URL}
 </panel_attributes>
     <additional_attributes/>
@@ -126,10 +126,10 @@ Toolkit
 &lt;&lt;Entity&gt;&gt;
 Tool
 --
-+ name: String {NotBlank, Length(0, 101)}
++ name: String {NotBlank, Length(0, 100)}
 + code: String {NotNull, Pattern(^[A-Z]{3}-[0-9]{3}(-[A-Z])?$), Unique}
-+ technology: String {NotBlank, Length(0, 101)}
-+ description: String  {NotBlank, Length(0, 256)}
++ technology: String {NotBlank, Length(0, 100)}
++ description: String  {NotBlank, Length(0, 255)}
 + retailPrice: Money {NotNull}
 + link: String {URL}</panel_attributes>
     <additional_attributes/>
@@ -171,7 +171,7 @@ Patronage
 --
 + status: Status {NotNull}
 + code: String {NotNull, Pattern(^[A-Z]{3}-[0-9]{3}(-[A-Z])?$), Unique}
-+ legalStuff: String  {NotBlank, Length(0, 256)}
++ legalStuff: String  {NotBlank, Length(0, 255)}
 + budget: Money {NotNull}
 + creationTime: DateTime {NotNull, Past}
 + periodOfTime: DateTime {NotNull}
@@ -222,7 +222,7 @@ PatronageReport
 --
 + sequenceNumber: String {NotBlank}
 + creationMoment: Date {NotNull, Past}
-+ memorandum: String  {NotBlank, Length(0, 256)}
++ memorandum: String  {NotBlank, Length(0, 255)}
 + link: String {URL}</panel_attributes>
     <additional_attributes/>
   </element>
