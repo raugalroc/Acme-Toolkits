@@ -1,3 +1,4 @@
+
 2022-03-14 18:18:13.600 INFO  [acme.Launcher@main] Starting Launcher using Java 1.8.0_281 on DESKTOP-NLHNAI7 with PID 9832 (C:\Users\juand\Desktop\Workspace-22.0\Frameworks\Acme-Framework-22.1\target\classes started by juand in C:\Users\juand\Desktop\Workspace-22.0\Projects\Acme-Toolkits) 
 2022-03-14 18:18:13.601 DEBUG [acme.Launcher@main] Running with Spring Boot v2.4.2, Spring v5.3.3 
 2022-03-14 18:18:13.603 INFO  [acme.Launcher@main] The following profiles are active: development,populator 
@@ -350,3 +351,5 @@
 2022-03-14 18:18:26.292 TRACE [org.hibernate.type.descriptor.sql.BasicBinder@main] binding parameter [5] as [INTEGER] - [7] 
 2022-03-14 18:18:27.616 INFO  [acme.framework.configuration.ShutdownConfiguration@main] The system is shutting down... 
 2022-03-14 18:18:27.633 DEBUG [acme.Launcher@main] Exit code = 0 
+
+

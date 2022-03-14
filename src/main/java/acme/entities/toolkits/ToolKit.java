@@ -13,6 +13,7 @@ import javax.validation.constraints.Pattern;
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.URL;
 
+import acme.entities.component.Component;
 import acme.entities.tools.Tool;
 import acme.framework.entities.AbstractEntity;
 import lombok.Getter;
@@ -58,5 +59,10 @@ public class ToolKit extends AbstractEntity {
 		@Valid
 		@ManyToMany
 		protected Collection<Tool>			tool;
+		
+		@NotNull
+		@Valid
+		@ManyToMany
+		protected Collection<Component>			component;
 
 }
