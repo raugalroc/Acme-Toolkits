@@ -1,8 +1,7 @@
-package acme.patrondashboard;
+package acme.entities.patrondashboard;
 
 import java.util.Map;
 
-import javax.persistence.Entity;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 
@@ -12,11 +11,12 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
-@Entity
 @Getter
 @Setter
 @ToString
 public class PatronDashboard extends AbstractEntity{
+	
+	private static final long serialVersionUID = 1L;
 	@NotNull @Min(0)
 	private Integer numerProposed;
 	@NotNull @Min(0)
@@ -24,13 +24,13 @@ public class PatronDashboard extends AbstractEntity{
 	@NotNull @Min(0)
 	private Integer numberDenied;
 	@NotNull
-	private Map<Status, Money> average;
+	private Map<String, Map<Status, Money>> average;
 	@NotNull
-	private Map<Status, Money> deviation;
+	private Map<String, Map<Status, Money>> deviation;
 	@NotNull
-	private Map<Status, Money> minimum;
+	private Map<String, Map<Status, Money>> minimum;
 	@NotNull
-	private Map<Status, Money> maximum;
+	private Map<String, Map<Status, Money>> maximum;
 
 
 }

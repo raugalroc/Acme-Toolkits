@@ -1,4 +1,4 @@
-package acme.patrondashboard;
+package acme.entities.patrondashboard;
 
 
 public enum Status {
