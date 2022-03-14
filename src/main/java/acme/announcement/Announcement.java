@@ -17,10 +17,17 @@ import lombok.Setter;
 @Getter
 @Setter
 public class Announcement extends AbstractEntity{
+<<<<<<< HEAD
 
 
 protected static final long serialVersionUID = 1L;
 
+=======
+	
+	
+protected static final long serialVersionUID = 1L;
+	
+>>>>>>> 45d2d88508489615e1f2be306589d8d4575e3079
 	@NotNull
 	@Past
 	private Date creationMoment;
@@ -37,4 +44,8 @@ protected static final long serialVersionUID = 1L;
 	@URL
 	private String link;
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 45d2d88508489615e1f2be306589d8d4575e3079
