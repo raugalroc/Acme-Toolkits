@@ -18,10 +18,9 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class Announcement extends AbstractEntity {
+public class Announcement extends AbstractEntity{
 
-	protected static final long	serialVersionUID	= 1L;
-
+protected static final long serialVersionUID = 1L;
 	@NotNull
 	@Past
 	private LocalDateTime creationMoment;
@@ -39,3 +38,4 @@ public class Announcement extends AbstractEntity {
 	private String link;
 
 }
+
