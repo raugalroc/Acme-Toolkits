@@ -192,20 +192,20 @@ Patronage
 AdministratorDashBoard 
 --
 + /numberComponents: Integer {NotNull}
-+ /averageReatilPriceComponents: Collection&lt;Collection&lt;Currency, String, Money&gt;&gt; {NotNull}
-+ /deviationReatilPriceComponents: Collection&lt;Collection&lt;Currency,String , Money&gt;&gt; {NotNull}
-+ /minimumReatilPriceComponents: Collection&lt;Collection&lt;Currency, String, Money&gt;&gt; {NotNull}
-+ /maximumReatilPriceComponents: Collection&lt;Collection&lt;Currency, String, Money&gt;&gt; {NotNull} 
++ /averageReatilPriceComponents: Map&lt;String,Map&lt;Status, Money&gt;&gt; {NotNull}
++ /deviationReatilPriceComponents: Map&lt;String,Map&lt;Status, Money&gt;&gt; {NotNull}
++ /minimumReatilPriceComponents: Map&lt;String,Map&lt;Status, Money&gt;&gt; {NotNull}
++ /maximumReatilPriceComponents: Map&lt;String,Map&lt;Status, Money&gt;&gt; {NotNull} 
 + /numberTools: Integer {NotNull}
-+ /averageReatilPriceTools: Collection&lt;Collection&lt;Currency, Money&gt;&gt; {NotNull}
-+ /deviationReatilPriceTools: Collection&lt;Collection&lt;Currency , Money&gt;&gt; {NotNull}
-+ /minimumReatilPriceTools: Collection&lt;Collection&lt;Currency, Money&gt;&gt; {NotNull}
-+ /maximumReatilPriceTools: Collection&lt;Collection&lt;Currency, Money&gt;&gt; {NotNull}
-+ /numberPatronages: Collection&lt;Collection&lt;Status, Integer&gt;&gt; {NotNull}
-+ /averageReatilPriceBudget: Collection&lt;Collection&lt;Status, Money&gt;&gt; {NotNull}
-+ /deviationReatilPriceBudget: Collection&lt;Collection&lt;Status, Money&gt;&gt; {NotNull}
-+ /minimumReatilPriceBudget: Collection&lt;Collection&lt;Status, Money&gt;&gt; {NotNull}
-+ /maximumReatilPriceBudget: Collection&lt;Collection&lt;Status, Money&gt;&gt; {NotNull} </panel_attributes>
++ /averageReatilPriceTools: Map&lt;String,Map&lt;Status, Money&gt;&gt; {NotNull}
++ /deviationReatilPriceTools: Map&lt;String,Map&lt;Status, Money&gt;&gt; {NotNull}
++ /minimumReatilPriceTools: Map&lt;String,Map&lt;Status, Money&gt;&gt; {NotNull}
++ /maximumReatilPriceTools: Map&lt;String,Map&lt;Status, Money&gt;&gt; {NotNull}
++ /numberPatronages: Map&lt;String,Map&lt;Status, Money&gt;&gt; {NotNull}
++ /averageReatilPriceBudget: Map&lt;String,Map&lt;Status, Money&gt;&gt; {NotNull}
++ /deviationReatilPriceBudget: Map&lt;String,Map&lt;Status, Money&gt;&gt; {NotNull}
++ /minimumReatilPriceBudget: Map&lt;String,Map&lt;Status, Money&gt;&gt; {NotNull}
++ /maximumReatilPriceBudget: Map&lt;String,Map&lt;Status, Money&gt;&gt; {NotNull} </panel_attributes>
     <additional_attributes/>
   </element>
   <element>
