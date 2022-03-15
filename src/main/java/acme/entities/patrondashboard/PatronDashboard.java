@@ -1,12 +1,7 @@
 package acme.entities.patrondashboard;
 
-import java.util.Map;
+import java.io.Serializable;
 
-import javax.validation.constraints.Min;
-import javax.validation.constraints.NotNull;
-
-import acme.framework.datatypes.Money;
-import acme.framework.entities.AbstractEntity;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -14,23 +9,29 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
-public class PatronDashboard extends AbstractEntity{
+public class PatronDashboard implements Serializable{
 	
-	private static final long serialVersionUID = 1L;
-	@NotNull @Min(0)
-	private Integer numerProposed;
-	@NotNull @Min(0)
-	private Integer numerAccepted;
-	@NotNull @Min(0)
-	private Integer numberDenied;
-	@NotNull
-	private Map<String, Map<Status, Money>> average;
-	@NotNull
-	private Map<String, Map<Status, Money>> deviation;
-	@NotNull
-	private Map<String, Map<Status, Money>> minimum;
-	@NotNull
-	private Map<String, Map<Status, Money>> maximum;
+	// Serialisation identifier -----------------------------------------------
+
+	protected static final long	serialVersionUID	= 1L;
+
+	// Attributes -------------------------------------------------------------
+	
+	Integer	numberProposed;
+	Integer	numberDenied;
+	Integer	numberAccepted;
+	Double	averageProposed;
+	Double	averageDenied;
+	Double	averageAccepted;
+	Double	deviationProposed;
+	Double	deviationAccepted;
+	Double	deviationDenied;
+	Double	minimumProposed;
+	Double	minimumAccepted;
+	Double	minimumDenied;
+	Double	maximumProposed;
+	Double	maximumAccepted;
+	Double	maximumDenied;
 
 
 }
