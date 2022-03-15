@@ -1,9 +1,10 @@
-package acme.entities.tools;
+package acme.entities.toolkits;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
 import javax.validation.Valid;
+import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
@@ -20,7 +21,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class Tool extends AbstractEntity {
+public class Item extends AbstractEntity {
 
 	// Serialisation identifier ----------------------------------------
 	
@@ -32,7 +33,7 @@ public class Tool extends AbstractEntity {
 	@Length(min = 0, max = 100)
 	protected String			name;
 	
-	@NotNull
+	@NotBlank
 	@Pattern(regexp = "^[A-Z]{3}-[0-9]{3}(-[A-Z])?$")
 	@Column(unique = true)
 	protected String			code;
@@ -45,13 +46,14 @@ public class Tool extends AbstractEntity {
 	@Length(min = 0, max = 255)
 	protected String			description;
 	
-	// Need custom validator to check that the amount of Money is >= 0
-	@NotNull
+	@Min(0)
 	@Valid
 	protected Money				retailPrice;
 	
 	@URL
-	protected String			link; 
+	protected String			link;
+	
+	protected ItemType			type;
 	
 	// Derived attributes ----------------------------------------------
 	
