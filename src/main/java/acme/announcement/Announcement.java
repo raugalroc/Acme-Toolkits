@@ -1,7 +1,7 @@
 
 package acme.announcement;
 
-import java.time.LocalDateTime;
+import java.util.Date;
 
 import javax.persistence.Entity;
 import javax.validation.constraints.NotBlank;
@@ -23,14 +23,14 @@ public class Announcement extends AbstractEntity{
 protected static final long serialVersionUID = 1L;
 	@NotNull
 	@Past
-	private LocalDateTime creationMoment;
+	private Date creationMoment;
 	@NotNull
 	@NotBlank(message = "The title must be mandatory")
-	@Length(min = 0, max = 101)
+	@Length(min = 0, max = 100)
 	private String title;
 	@NotNull
 	@NotBlank(message = "The body must be mandatory")
-	@Length(min = 0, max = 256)
+	@Length(min = 0, max = 255)
 	private String body;
 	@NotNull
 	private Boolean	critic;
