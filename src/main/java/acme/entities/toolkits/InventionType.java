@@ -1,7 +1,7 @@
 package acme.entities.toolkits;
 
 
-public enum ItemType {
+public enum InventionType {
 
 	COMPONENT, TOOL
 	

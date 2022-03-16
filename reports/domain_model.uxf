@@ -104,7 +104,7 @@ Toolkit
     </coordinates>
     <panel_attributes>bg=green
 &lt;&lt;Entity&gt;&gt;
-Item
+Invention
 --
 + name: String {NotBlank, Length(0, 100)}
 + code: String {NotBlank, Pattern("^[A-Z]{3}-[0-9]{3}(-[A-Z])?$"), Unique}
@@ -112,7 +112,7 @@ Item
 + description: String  {NotBlank, Length(0, 255)}
 + retailPrice: Money
 + link: String {URL}
-+ type: ItemType</panel_attributes>
++ type: InventionType</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -467,7 +467,7 @@ Anonymous</panel_attributes>
     </coordinates>
     <panel_attributes>bg=green
 &lt;&lt;Enum&gt;&gt;
-ItemType
+InventionType
 --
 
 + COMPONENT

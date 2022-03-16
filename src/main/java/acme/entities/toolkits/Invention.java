@@ -21,7 +21,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class Item extends AbstractEntity {
+public class Invention extends AbstractEntity {
 
 	// Serialisation identifier ----------------------------------------
 	
@@ -53,7 +53,7 @@ public class Item extends AbstractEntity {
 	@URL
 	protected String			link;
 	
-	protected ItemType			type;
+	protected InventionType			type;
 	
 	// Derived attributes ----------------------------------------------
 	

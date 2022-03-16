@@ -56,6 +56,6 @@ public class ToolKit extends AbstractEntity {
 		@NotNull
 		@Valid
 		@ManyToMany
-		protected Collection<Item>			tool;
+		protected Collection<Invention>			items;
 
 }
