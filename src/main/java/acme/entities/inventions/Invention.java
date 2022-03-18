@@ -1,4 +1,4 @@
-package acme.entities.toolkits;
+package acme.entities.inventions;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

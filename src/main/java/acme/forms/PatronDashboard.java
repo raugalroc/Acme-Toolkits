@@ -1,4 +1,4 @@
-package acme.entities.patrondashboard;
+package acme.forms;
 
 import java.io.Serializable;
 
