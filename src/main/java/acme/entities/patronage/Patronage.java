@@ -52,7 +52,7 @@ public class Patronage extends AbstractEntity{
 	@NotNull
 	@Temporal(TemporalType.TIMESTAMP)
 	@Past
-	protected Date				creationMoment;
+	protected Date				creationTime;
 	
 	@NotNull
 	@Temporal(TemporalType.TIMESTAMP)
@@ -61,10 +61,6 @@ public class Patronage extends AbstractEntity{
 	@NotNull
 	@Temporal(TemporalType.TIMESTAMP)
 	protected Date				endTime;
-	
-	@NotNull
-	@Valid
-	protected Money				retailPrice;
 	
 	@URL
 	protected String 			link;
