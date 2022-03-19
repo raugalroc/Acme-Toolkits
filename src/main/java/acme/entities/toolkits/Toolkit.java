@@ -15,7 +15,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class ToolKit extends AbstractEntity {
+public class Toolkit extends AbstractEntity {
 	
 	// Serialisation identifier ----------------------------------------
 	
@@ -47,6 +47,6 @@ public class ToolKit extends AbstractEntity {
 		// Derived attributes ----------------------------------------------
 		
 		// Relationships ---------------------------------------------------
-	
+
 
 }
