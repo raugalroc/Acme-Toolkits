@@ -3,7 +3,6 @@ package acme.entities.toolkits;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 
 import org.hibernate.validator.constraints.Length;
@@ -25,7 +24,7 @@ public class Toolkit extends AbstractEntity {
 		// Atributes -------------------------------------------------------
 		
 	
-		@NotNull
+		@NotBlank
 		@Pattern(regexp = "^[A-Z]{3}-[0-9]{3}(-[A-Z])?$")
 		@Column(unique = true)
 		protected String			code;
@@ -48,5 +47,6 @@ public class Toolkit extends AbstractEntity {
 		// Derived attributes ----------------------------------------------
 		
 		// Relationships ---------------------------------------------------
+
 
 }
