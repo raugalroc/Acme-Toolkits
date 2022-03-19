@@ -1,0 +1,5 @@
+key,enabled,identity,password,username
+user-account-inventor-01,false,"UserIdentity{name: 'Jack', surname: 'Smith', email: 'jack.smith@acme.com'}",inventor1,inventor1
+user-account-inventor-02,false,"UserIdentity{name: 'Harry', surname: 'Jones', email: 'harry.jones@acme.com'}",inventor2,inventor2
+user-account-patron-01,false,"UserIdentity{name: 'George', surname: 'Williams', email: 'george.williams@acme.com'}",patron1,patron1
+user-account-patron-02,false,"UserIdentity{name: 'Michael', surname: 'Davis', email: 'michael.davis@acme.com'}",patron2,patron2
