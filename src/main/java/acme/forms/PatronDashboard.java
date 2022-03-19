@@ -2,6 +2,9 @@ package acme.forms;
 
 
 import java.io.Serializable;
+import java.util.Map;
+
+import org.springframework.data.util.Pair;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -18,21 +21,15 @@ public class PatronDashboard implements Serializable{
 
 	// Attributes -------------------------------------------------------------
 	
-	Integer	numberProposed;
-	Integer	numberDenied;
-	Integer	numberAccepted;
-	Double	averageProposed;
-	Double	averageDenied;
-	Double	averageAccepted;
-	Double	deviationProposed;
-	Double	deviationAccepted;
-	Double	deviationDenied;
-	Double	minimumProposed;
-	Double	minimumAccepted;
-	Double	minimumDenied;
-	Double	maximumProposed;
-	Double	maximumAccepted;
-	Double	maximumDenied;
+	double	numberProposed;
+	double	numberDenied;
+	double	numberAccepted;
+	Map<String, Pair<Status, Double>> averageBudged;
+	Map<String, Pair<Status, Double>> deviationBudged;
+	Map<String, Pair<Status, Double>> minimumBudged;
+	Map<String, Pair<Status, Double>> maximumBudged;
+
+
 
 
 }
