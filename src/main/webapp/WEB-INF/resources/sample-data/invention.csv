@@ -1,0 +1,6 @@
+key,name,code,technology,description,retail-price,link,invention-type,key:inventor
+invention-01,"screw","ABC-123-A","Steel","Quite strong and relatively inexpensive cost","EUR 10.90","https://www.thomann.de/es/neutrik_plastite_b_screw_1_8.htm?gclid=Cj0KCQjw29CRBhCUARIsAOboZbKceumeJa6YA0jcfKcywRnzSBt3eSdImCYVCKzupEIr3aK811_eUmcaAnGuEALw_wcB",COMPONENT,inventor-01
+invention-02,"screwdriver","DEF-456-B","Steel and plastic","For turning screws","EUR 4.65","https://www.amazon.es/s?k=screwdriver&__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1M5364GKPOG5&sprefix=screwdriver%2Caps%2C113&ref=nb_sb_noss",TOOL,inventor-02
+invention-03,"shovel","GHA-157-H","Steel and plastic","Used for moving coal, earth, snow, or other material","EUR 14.99",null,TOOL,inventor-03
+invention-04,"nail","ZXC-019-O","Steel","Used for fastening one or more objects to each other","EUR 7.50","https://www.britannica.com/technology/nail-fastener",COMPONENT,inventor-04
+invention-05,"wrench","JAI-654-L","Steel","Used to provide grip and mechanical advantage in applying torque to turn objects","EUR 10.99",null,TOOL,inventor-06

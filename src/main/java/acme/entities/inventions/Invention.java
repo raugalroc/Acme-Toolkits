@@ -1,4 +1,4 @@
-package acme.entities.tools;
+package acme.entities.inventions;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -20,7 +20,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class Tool extends AbstractEntity {
+public class Invention extends AbstractEntity {
 
 	// Serialisation identifier ----------------------------------------
 	
@@ -32,7 +32,7 @@ public class Tool extends AbstractEntity {
 	@Length(min = 0, max = 100)
 	protected String			name;
 	
-	@NotNull
+	@NotBlank
 	@Pattern(regexp = "^[A-Z]{3}-[0-9]{3}(-[A-Z])?$")
 	@Column(unique = true)
 	protected String			code;
@@ -45,13 +45,13 @@ public class Tool extends AbstractEntity {
 	@Length(min = 0, max = 255)
 	protected String			description;
 	
-	// Need custom validator to check that the amount of Money is >= 0
-	@NotNull
 	@Valid
 	protected Money				retailPrice;
 	
 	@URL
-	protected String			link; 
+	protected String			link;
+	
+	protected InventionType			inventionType;
 	
 	// Derived attributes ----------------------------------------------
 	
