@@ -6,11 +6,12 @@ import org.springframework.stereotype.Service;
 import acme.entities.inventions.Invention;
 import acme.framework.components.models.Model;
 import acme.framework.controllers.Request;
+import acme.framework.entities.Principal;
 import acme.framework.services.AbstractShowService;
 import acme.roles.Inventor;
 
 @Service
-public class InventorInventionShowService implements AbstractShowService<Inventor, Invention> {
+public class InventorInventionShowMineService implements AbstractShowService<Inventor, Invention> {
 
 	// Internal state ------------------------------------------------------------
 
@@ -23,7 +24,19 @@ public class InventorInventionShowService implements AbstractShowService<Invento
 	public boolean authorise(final Request<Invention> request) {
 		assert request != null;
 		
-		return true;
+		boolean result;
+		int masterId;
+		Inventor inventor;
+		Principal principal;
+
+		masterId = request.getModel().getInteger("id");
+		inventor = this.repository.findOneInventionById(masterId).getInventor();
+		principal = request.getPrincipal();
+		result = (
+			inventor.getUserAccount().getId() == principal.getAccountId()
+		);
+		
+		return result;
 	}
 
 	@Override

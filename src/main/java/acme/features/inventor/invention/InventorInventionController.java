@@ -15,17 +15,18 @@ public class InventorInventionController extends AbstractController<Inventor, In
 	// Internal state ------------------------------------------------------------
 	
 	@Autowired
-	protected InventorInventionListService		listService;
+	protected InventorInventionListMineService		listService;
 	
 	@Autowired
-	protected InventorInventionShowService		showService;
+	protected InventorInventionShowMineService		showService;
 	
 	// Constructors --------------------------------------------------------------
 	
 	@PostConstruct
 	protected void initialise() {
-		super.addCommand("list", this.listService);
 		super.addCommand("show", this.showService);
+		
+		super.addCommand("list-mine", "list", this.listService);
 	}
 	
 }
