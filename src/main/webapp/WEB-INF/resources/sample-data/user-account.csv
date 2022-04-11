@@ -1,13 +1,13 @@
 key,enabled,identity,password,username
-user-account-inventor-01,false,"UserIdentity{name: 'Jack', surname: 'Smith', email: 'jack.smith@acme.com'}",inventor1,inventor1
-user-account-inventor-02,false,"UserIdentity{name: 'Harry', surname: 'Jones', email: 'harry.jones@acme.com'}",inventor2,inventor2
-user-account-inventor-03,false,"UserIdentity{name: 'Mary', surname: 'Anderson', email: 'mary.anderson@acme.com'}",inventor3,inventor3
-user-account-inventor-04,false,"UserIdentity{name: 'Susan', surname: 'Clark', email: 'susan.clark@acme.com'}",inventor4,inventor4
-user-account-inventor-05,false,"UserIdentity{name: 'William', surname: 'Grey', email: 'william.grey@acme.com'}",inventor5,inventor5
-user-account-inventor-06,false,"UserIdentity{name: 'Lisa', surname: 'Green', email: 'lisa.green@acme.com'}",inventor6,inventor6
-user-account-patron-01,false,"UserIdentity{name: 'George', surname: 'Williams', email: 'george.williams@acme.com'}",patron1,patron1
-user-account-patron-02,false,"UserIdentity{name: 'Michael', surname: 'Davis', email: 'michael.davis@acme.com'}",patron2,patron2
-user-account-patron-03,false,"UserIdentity{name: 'David', surname: 'Lee', email: 'david.lee@acme.com'}",patron3,patron3
-user-account-patron-04,false,"UserIdentity{name: 'Michelle', surname: 'Mason', email: 'michelle.mason@acme.com'}",patron4,patron4
-user-account-patron-05,false,"UserIdentity{name: 'Carol', surname: 'Parker', email: 'carol.parker@acme.com'}",patron5,patron5
-user-account-patron-06,false,"UserIdentity{name: 'Anna', surname: 'Wood', email: 'anna.wood@acme.com'}",patron6,patron6
+user-account-inventor-01,true,"UserIdentity{name: 'Jack', surname: 'Smith', email: 'jack.smith@acme.com'}",inventor1,inventor1
+user-account-inventor-02,true,"UserIdentity{name: 'Harry', surname: 'Jones', email: 'harry.jones@acme.com'}",inventor2,inventor2
+user-account-inventor-03,true,"UserIdentity{name: 'Mary', surname: 'Anderson', email: 'mary.anderson@acme.com'}",inventor3,inventor3
+user-account-inventor-04,true,"UserIdentity{name: 'Susan', surname: 'Clark', email: 'susan.clark@acme.com'}",inventor4,inventor4
+user-account-inventor-05,true,"UserIdentity{name: 'William', surname: 'Grey', email: 'william.grey@acme.com'}",inventor5,inventor5
+user-account-inventor-06,true,"UserIdentity{name: 'Lisa', surname: 'Green', email: 'lisa.green@acme.com'}",inventor6,inventor6
+user-account-patron-01,true,"UserIdentity{name: 'George', surname: 'Williams', email: 'george.williams@acme.com'}",patron1,patron1
+user-account-patron-02,true,"UserIdentity{name: 'Michael', surname: 'Davis', email: 'michael.davis@acme.com'}",patron2,patron2
+user-account-patron-03,true,"UserIdentity{name: 'David', surname: 'Lee', email: 'david.lee@acme.com'}",patron3,patron3
+user-account-patron-04,true,"UserIdentity{name: 'Michelle', surname: 'Mason', email: 'michelle.mason@acme.com'}",patron4,patron4
+user-account-patron-05,true,"UserIdentity{name: 'Carol', surname: 'Parker', email: 'carol.parker@acme.com'}",patron5,patron5
+user-account-patron-06,true,"UserIdentity{name: 'Anna', surname: 'Wood', email: 'anna.wood@acme.com'}",patron6,patron6
