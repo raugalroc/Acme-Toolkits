@@ -21,7 +21,7 @@ public class InventorInventionListMineService implements AbstractListService<Inv
 	@Autowired
 	protected InventorInventionRepository 		repository;
 
-	// AbstractShowService<Inventor, Invention> interface ------------------------
+	// AbstractListService<Inventor, Invention> interface ------------------------
 	
 	@Override
 	public boolean authorise(final Request<Invention> request) {
