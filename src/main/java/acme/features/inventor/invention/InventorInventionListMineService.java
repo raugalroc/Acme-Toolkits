@@ -9,11 +9,12 @@ import acme.entities.inventions.Invention;
 import acme.entities.inventions.InventionType;
 import acme.framework.components.models.Model;
 import acme.framework.controllers.Request;
+import acme.framework.entities.Principal;
 import acme.framework.services.AbstractListService;
 import acme.roles.Inventor;
 
 @Service
-public class InventorInventionListService implements AbstractListService<Inventor, Invention> {
+public class InventorInventionListMineService implements AbstractListService<Inventor, Invention> {
 
 	// Internal state ------------------------------------------------------------
 
@@ -34,14 +35,16 @@ public class InventorInventionListService implements AbstractListService<Invento
 		assert request != null;
 		
 		Collection<Invention> result;
+		Principal principal;
 		InventionType type;
 		
 		try {
 			type = InventionType.valueOf(request.getModel().getAttribute("type", String.class).toUpperCase());
 		} catch (final Throwable e) {
 			type = null;
-		} 
-		result = this.repository.findAllInventionsByType(type);
+		}
+		principal = request.getPrincipal();
+		result = this.repository.findAllInventionsByTypeAndInventorId(type, principal.getActiveRoleId());
 		
 		return result;
 	}

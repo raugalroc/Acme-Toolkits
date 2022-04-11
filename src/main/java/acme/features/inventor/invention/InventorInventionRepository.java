@@ -12,8 +12,8 @@ import acme.framework.repositories.AbstractRepository;
 @Repository
 public interface InventorInventionRepository extends AbstractRepository {
 
-	@Query("SELECT i FROM Invention i WHERE i.inventionType = :type")
-	Collection<Invention> findAllInventionsByType(InventionType type);
+	@Query("SELECT i FROM Invention i JOIN i.inventor r WHERE i.inventionType = :type AND r.id = :id")
+	Collection<Invention> findAllInventionsByTypeAndInventorId(InventionType type, int id);
 
 	@Query("SELECT i FROM Invention i WHERE i.id = :id")
 	Invention findOneInventionById(int id);
