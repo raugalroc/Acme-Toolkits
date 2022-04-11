@@ -41,10 +41,16 @@ master.menu.administrator.shut-down = Shut down
 master.menu.provider = Provider
 master.menu.provider.favourite-link = Favourite link
 
-# master.menu.consumer ##########################################################
+# master.menu.consumer #########################################################
 
 master.menu.consumer = Consumer
 master.menu.consumer.favourite-link = Favourite link
+
+# master.menu.inventor #########################################################
+
+master.menu.inventor = Inventor
+master.menu.inventor.invention.list-tools = List tools
+master.menu.inventor.invention.list-components = List components
 
 # master.menu.user-account ####################################################
 

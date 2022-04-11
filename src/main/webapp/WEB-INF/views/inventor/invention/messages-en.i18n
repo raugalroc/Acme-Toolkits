@@ -1,0 +1,11 @@
+inventor.invention.list.label.code = Code
+inventor.invention.list.label.name = Name
+inventor.invention.list.label.technology = Technology
+inventor.invention.list.label.retailPrice = Price
+
+inventor.invention.form.label.code = Code
+inventor.invention.form.label.name = Name
+inventor.invention.form.label.technology = Technology
+inventor.invention.form.label.description = Description
+inventor.invention.form.label.retailPrice = Price
+inventor.invention.form.label.link = More information
