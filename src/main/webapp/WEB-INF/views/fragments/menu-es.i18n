@@ -27,6 +27,8 @@ master.menu.anonymous.favourite-link.borpincal = 77942016F: Piñero Calera, Borj
 master.menu.anonymous.favourite-link.juaortgue = 53964209E: Ortiz Guerra, Juan Antonio
 master.menu.anonymous.favourite-link.nurgomari = 51210808C: Gómez Arias, Nuria
 
+master.menu.anonymous.invention.list-component = Lista de componentes
+
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrador
