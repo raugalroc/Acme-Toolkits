@@ -1,4 +1,4 @@
-package acme.features.userRole.userAccount;
+package acme.features.any.patron;
 
 import javax.annotation.PostConstruct;
 
@@ -6,23 +6,22 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
 import acme.framework.controllers.AbstractController;
-import acme.framework.entities.UserAccount;
-import acme.framework.roles.UserRole;
+import acme.framework.roles.Any;
+import acme.roles.Patron;
 
 @Controller
-public class UserRoleUserAccountController extends AbstractController<UserRole, UserAccount>{
+public class AnyPatronController extends AbstractController<Any, Patron>{
 
 	@Autowired
-	protected UserRoleUserAccountListService	listService;
+	protected AnyPatronListService 	listService;
 	
 	@Autowired
-	protected UserRoleUserAccountShowService	showService;
+	protected AnyPatronShowService 	showService;
+	
 	
 	@PostConstruct
 	protected void initialise() {
 		super.addCommand("list", this.listService);
 		super.addCommand("show", this.showService);
 	}
-	
-	
 }
