@@ -64,6 +64,10 @@ master.menu.user-account.become-provider = Become a provider
 master.menu.user-account.consumer = Consumer data
 master.menu.user-account.become-consumer = Become a consumer
 
+
+master.menu.administrator.administrator-dashboard = Administrator Dashboard
+
 # master.menu.any ################################
 master.menu.any.patron = Patrons
 master.menu.any.inventor = Inventors
+

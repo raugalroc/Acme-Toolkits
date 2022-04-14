@@ -41,6 +41,9 @@
 			<acme:menu-suboption code="master.menu.administrator.populate-sample" action="/administrator/populate-sample"/>			
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.shut-down" action="/administrator/shut-down"/>
+			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.administrator.administrator-dashboard" action="/administrator/administrator-dashboard/show"/>
+      <acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.any.patron" action="/any/patron/list"/>
 			<acme:menu-suboption code="master.menu.any.inventor" action="/any/inventor/list"/>
       <acme:menu-suboption code="master.menu.anonymous.invention.list-component" action="/any/invention/list-component"/>

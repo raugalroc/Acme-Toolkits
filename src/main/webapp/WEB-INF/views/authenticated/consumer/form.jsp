@@ -22,3 +22,28 @@
 	<acme:submit test="${command == 'create'}" code="authenticated.consumer.consumer.form.button.create" action="/authenticated/consumer/create"/>
 	<acme:submit test="${command == 'update'}" code="authenticated.consumer.consumer.form.button.update" action="/authenticated/consumer/update"/>
 </acme:form>
+
+<table class="table table-sm">
+	<jstl:forEach var="entry" items="${averageRetailPriceComponents}">
+		<tr>
+			<th scope="row">
+				<acme:message code="administrator.dashboard.form.label.average-components.technology"/>
+			</th>
+			<td>
+				<acme:print value="${entry.getKey().getKey()}"/>
+			</td>
+			<th scope="row">
+				<acme:message code="administrator.dashboard.form.label.average-components.currency"/>
+			</th>
+			<td>
+				<acme:print value="${entry.getKey().getValue()}"/>
+			</td>
+			<th scope="row">
+				<acme:message code="administrator.dashboard.form.label.average-components.amount"/>
+			</th>
+			<td>
+				<acme:print value="${entry.getValue()}"/>
+			</td>
+		</tr>
+	</jstl:forEach>
+</table>
