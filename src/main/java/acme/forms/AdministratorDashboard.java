@@ -5,8 +5,10 @@ import java.util.Map;
 
 import org.springframework.data.util.Pair;
 
+import acme.entities.patronage.PatronageStatus;
 import lombok.Getter;
 import lombok.Setter;
+
 
 @Getter
 @Setter
@@ -31,12 +33,12 @@ public class AdministratorDashboard implements Serializable{
 	    Map<String, Double>                  minimumRetailPriceTools;
 	    Map<String, Double>                  maximumRetailPriceTools;
 	    
-	    Double             	                 numberPatronages;
+	    Map<PatronageStatus,Double>					numberPatronages;
 	    
-	    Map<Status, Double>         averageBudgetPatronage;
-	    Map<Status, Double>         deviationBudgetPatronage;
-	    Map<Status, Double>         minimumBudgetPatronage;
-	    Map<Status, Double>         maximumBudgetPatronage;
+	    Map<PatronageStatus, Double>         averageBudgetPatronage;
+	    Map<PatronageStatus, Double>         deviationBudgetPatronage;
+	    Map<PatronageStatus, Double>         minimumBudgetPatronage;
+	    Map<PatronageStatus, Double>         maximumBudgetPatronage;
 
 		// Derived attributes -----------------------------------------------------
 

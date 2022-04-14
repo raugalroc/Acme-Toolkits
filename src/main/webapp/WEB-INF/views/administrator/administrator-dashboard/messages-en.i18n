@@ -1,0 +1,19 @@
+administrator.dashboard.form.title.components = Components
+
+administrator.dashboard.form.label.number-components = Number of Components
+
+administrator.dashboard.form.label.technology = Technology
+administrator.dashboard.form.label.currency = Currency
+administrator.dashboard.form.label.average.value = Average
+administrator.dashboard.form.label.deviation.value = Deviation
+administrator.dashboard.form.label.minimum.value = Minimum
+administrator.dashboard.form.label.maximum.value = Maximum
+
+administrator.dashboard.form.title.tools = Tools
+
+administrator.dashboard.form.label.number-tools = Number of Tools
+
+administrator.dashboard.form.title.patronages = Patronages
+
+administrator.dashboard.form.label.status = Patronage Status
+administrator.dashboard.form.label.number-patronages.value = Number of Patronages
