@@ -55,6 +55,10 @@ master.menu.inventor = Inventor
 master.menu.inventor.invention.list-tools = Ver mis herramientas
 master.menu.inventor.invention.list-components = Ver mis componentes
 
+# master.menu.patron #########################################################
+
+master.menu.patron.patronages = Lista de patrocinios
+
 # master.menu.user-account ####################################################
 
 master.menu.user-account = Cuenta
