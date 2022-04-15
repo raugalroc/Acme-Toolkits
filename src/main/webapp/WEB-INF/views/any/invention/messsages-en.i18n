@@ -1,0 +1,23 @@
+# i18n-en.i18n
+#
+# Copyright (C) 2012-2022 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+any.invention.list.label.code = Code
+any.invention.list.label.name = Name
+any.invention.list.label.technology = Technology
+any.invention.list.label.retailPrice = Retail Price
+
+any.invention.form.label.code = Code:
+any.invention.form.label.name = Name:
+any.invention.form.label.technology = Technology:
+any.invention.form.label.description = Description:
+any.invention.form.label.retailPrice = Retail Price:
+any.invention.form.label.link = Link:
+
+ 
