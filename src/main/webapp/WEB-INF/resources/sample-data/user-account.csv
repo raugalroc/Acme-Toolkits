@@ -1,4 +1,3 @@
-
 key,enabled,identity,password,username
 user-account-inventor-01,true,"UserIdentity{name: 'Jack', surname: 'Smith', email: 'jack.smith@acme.com'}",inventor1,inventor1
 user-account-inventor-02,true,"UserIdentity{name: 'Harry', surname: 'Jones', email: 'harry.jones@acme.com'}",inventor2,inventor2

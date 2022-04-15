@@ -42,6 +42,7 @@ public class AnyPatronListService implements AbstractListService<Any, Patron>{
 		assert model != null;
 		
 		request.unbind(entity, model, "company", "statement", "link");
+		model.setAttribute("username", entity.getUserAccount().getUsername());
 		
 	}
 
