@@ -57,6 +57,7 @@ master.menu.inventor.invention.list-components = Ver mis componentes
 
 # master.menu.patron #########################################################
 
+master.menu.patron = Patrocinador
 master.menu.patron.patronages = Lista de patrocinios
 
 # master.menu.user-account ####################################################

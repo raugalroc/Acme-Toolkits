@@ -58,6 +58,7 @@ master.menu.inventor.invention.list-components = List my components
 
 # master.menu.patron #########################################################
 
+master.menu.patron = Patron
 master.menu.patron.patronages = Patronage List
 
 # master.menu.user-account ####################################################

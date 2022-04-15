@@ -1,0 +1,28 @@
+patron.patronage.list.label.status = Status
+patron.patronage.list.label.code = Code
+patron.patronage.list.label.budget = Budget
+patron.patronage.list.label.legalStuff = Legal Stuff
+patron.patronage.list.label.creationTime = Creation Time
+patron.patronage.list.label.startTime = Start Time
+patron.patronage.list.label.endTime = End Time
+
+patron.patronage.form.label.status = Status:
+patron.patronage.form.label.proposed = Proposed:
+patron.patronage.form.label.accepted = Accepted:
+patron.patronage.form.label.denied = Denied:
+patron.patronage.form.label.code = Code:
+patron.patronage.form.label.legalStuff = Legal Stuff:
+patron.patronage.form.label.budget = Budget:
+patron.patronage.form.label.creationTime = Creation Time:
+patron.patronage.form.label.startTime = Start Time:
+patron.patronage.form.label.endTime = End Time:
+patron.patronage.form.label.link = Link:
+
+patron.patronage.message.inventor = Inventor Profile
+patron.patronage.form.label.inventor.username = Username
+patron.patronage.form.label.inventor.name = Name
+patron.patronage.form.label.inventor.surname = Surname
+patron.patronage.form.label.inventor.email = Email
+patron.patronage.form.label.inventor.company = Company
+patron.patronage.form.label.inventor.statement = Statement
+patron.patronage.form.label.inventor.link = Link

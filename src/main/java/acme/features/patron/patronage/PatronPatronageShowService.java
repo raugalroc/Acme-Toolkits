@@ -7,6 +7,7 @@ import acme.entities.patronage.Patronage;
 import acme.framework.components.models.Model;
 import acme.framework.controllers.Request;
 import acme.framework.services.AbstractShowService;
+import acme.roles.Inventor;
 import acme.roles.Patron;
 
 @Service
@@ -52,10 +53,19 @@ public class PatronPatronageShowService implements AbstractShowService<Patron, P
 					assert entity != null;
 					assert model != null;
 					
-					request.unbind(entity, model, "status", "code", "legalStuff", "budget", "creationTime", "startTime", "endTime", "link");
-					model.setAttribute("inventorId", entity.getInventor().getUserAccount().getId());
+					final Inventor inventor = entity.getInventor();
+					final String inventorUsername = inventor.getUserAccount().getUsername();
+					final String inventorName = inventor.getUserAccount().getIdentity().getName();
+					final String inventorSurname = inventor.getUserAccount().getIdentity().getSurname();
+					final String inventorEmail = inventor.getUserAccount().getIdentity().getEmail();
 					
-			
+					
+					request.unbind(entity, model, "status", "code", "legalStuff", "budget", "creationTime", "startTime", "endTime", "link");
+					request.unbind(inventor, model, "company", "statement", "link");
+					model.setAttribute("username", inventorUsername);
+					model.setAttribute("name", inventorName);
+					model.setAttribute("surname", inventorSurname);
+					model.setAttribute("email", inventorEmail);
 				}
 
 
