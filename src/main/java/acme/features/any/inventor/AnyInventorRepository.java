@@ -13,6 +13,6 @@ public interface AnyInventorRepository extends AbstractRepository{
 	@Query("select i from Inventor i join i.userAccount u where u.enabled = true")
 	Collection<Inventor> findInventorAvailable();
 
-	@Query("select i from Inventor i where i.id = :id")
+	@Query("select i from Inventor i join i.userAccount u where i.id = :id and u.enabled = true")
 	Inventor findOneInventorById(final int id);
 }

@@ -42,6 +42,7 @@ public class AnyInventorListService implements AbstractListService<Any, Inventor
 		assert model != null;
 		
 		request.unbind(entity, model, "company", "statement", "link");
+		model.setAttribute("username", entity.getUserAccount().getUsername());
 		
 	}
 }

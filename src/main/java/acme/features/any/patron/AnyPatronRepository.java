@@ -14,7 +14,7 @@ public interface AnyPatronRepository extends AbstractRepository{
 	@Query("select p from Patron p join p.userAccount u where u.enabled = true")
 	Collection<Patron> findPatronAvailable();
 
-	@Query("select p from Patron p where p.id = :id")
+	@Query("select p from Patron p join p.userAccount u where p.id = :id and u.enabled = true")
 	Patron findOnePatronById(final int id);
 	
 }
