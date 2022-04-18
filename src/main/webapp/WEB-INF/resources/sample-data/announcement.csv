@@ -1,3 +1,8 @@
 key,creation-moment,title,body,critic,link
-announcement-01,"2021/04/10 19:02","Some announcement title","Some announcement body", false,"https://www.linkedin.com/"
-announcement-02,"2021/03/03 10:21","Random announcement title", "Random announcement message", true, "https://twitter.com/?lang=en"
+announcement-01,"2021/04/10 19:02","Some announcement title 1","Some announcement body 1", false,"https://www.linkedin.com/"
+announcement-02,"2022/04/09 10:21","Random announcement title 2", "Random announcement message 2", true, "https://twitter.com/?lang=en"
+announcement-03,"2022/04/10 10:21","Random announcement title 3", "Random announcement message 3", false, "https://www.facebook.com/"
+announcement-04,"2022/04/11 10:21","Random announcement title 4", "Random announcement message 4", true, "https://www.instagram.com/"
+announcement-05,"2022/04/12 10:21","Random announcement title 5", "Random announcement message 5", false, "https://mail.google.com/mail/u/0/"
+announcement-06,"2022/04/13 10:21","Random announcement title 6", "Random announcement message 6", true, "https://twitter.com/?lang=en"
+announcement-07,"2022/04/14 10:21","Random announcement title 7", "Random announcement message 7", false, "https://twitter.com/?lang=en"

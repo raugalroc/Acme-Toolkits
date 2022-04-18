@@ -29,6 +29,11 @@ master.menu.anonymous.favourite-link.nurgomari = 51210808C: Gómez Arias, Nuria
 
 master.menu.anonymous.invention.list-component = List of components
 
+# master.menu.authenticated ##########################################################
+master.menu.authenticated = Authenticated
+master.menu.authenticated.config-data.show = System Currencies
+master.menu.authenticated.announcement.list=List announcements
+
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrator
