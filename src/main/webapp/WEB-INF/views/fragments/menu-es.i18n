@@ -28,6 +28,7 @@ master.menu.anonymous.favourite-link.juaortgue = 53964209E: Ortiz Guerra, Juan A
 master.menu.anonymous.favourite-link.nurgomari = 51210808C: Gómez Arias, Nuria
 
 master.menu.anonymous.invention.list-component = Lista de componentes
+master.menu.anonymous.chirp.list = Chirps recientes
 
 # master.menu.authenticated ##########################################################
 master.menu.authenticated = Authenticated
