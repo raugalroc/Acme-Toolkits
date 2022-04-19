@@ -61,6 +61,7 @@ master.menu.inventor = Inventor
 master.menu.inventor.invention.list-tools = List my tools
 master.menu.inventor.invention.list-components = List my components
 master.menu.inventor.patronage.list-patronages = Show my patroganes
+master.menu.inventor.patronage-report = List Patronage Reports
 
 # master.menu.patron #########################################################
 
