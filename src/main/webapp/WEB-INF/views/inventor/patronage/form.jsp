@@ -22,6 +22,9 @@
 		path="legalStuff" />
 	<acme:input-money code="inventor.patronage.form.label.budget"
 		path="budget" />
+	<acme:input-textbox code="inventor.patronage.form.label.patron"
+		path="patron.userAccount.username" />
+
 	<acme:input-moment code="inventor.patronage.form.label.creationTime"
 		path="creationTime" />
 	<acme:input-moment code="inventor.patronage.form.label.startTime"
