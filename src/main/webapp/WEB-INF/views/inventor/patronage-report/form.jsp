@@ -16,9 +16,10 @@
 <%@taglib prefix="acme" uri="urn:jsptagdir:/WEB-INF/tags"%>
 
 <acme:form readonly="${readonly}">
-	<acme:input-textbox code="inventor.patronageReport.form.label.sequenceNumber" path="sequenceNumber"/>
-	<acme:input-moment code="inventor.patronageReport.form.label.creationMoment" path="creationMoment"/>	
-	<acme:input-textarea  code="inventor.patronageReport.form.label.memorandum" path="memorandum"/>
-	<acme:input-url code="inventor.patronageReport.form.label.link" path="link"/>
+	<acme:input-textbox code="inventor.patronage-report.form.label.sequenceNumber" path="sequenceNumber"/>
+	<acme:input-moment code="inventor.patronage-report.form.label.creationMoment" path="creationMoment"/>	
+	<acme:input-textarea  code="inventor.patronage-report.form.label.memorandum" path="memorandum"/>
+	<acme:input-url code="inventor.patronage-report.form.label.link" path="link"/>
+	<acme:input-textbox code="inventor.patronage-report.form.label.patronage.code" path="patronage.code"/>
 	
 </acme:form>
