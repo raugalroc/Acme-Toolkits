@@ -16,8 +16,22 @@
 <%@taglib prefix="acme" uri="urn:jsptagdir:/WEB-INF/tags"%>
 
 <acme:list>
-	<acme:list-column code="authenticated.announcement.list.label.title" path="title"/>
-	<acme:list-column code="authenticated.announcement.list.label.creationMoment" path="creationMoment"/>
-	<acme:list-column code="authenticated.announcement.list.label.link" path="link"/>
-	<acme:list-column code="authenticated.announcement.list.label.critical" path="critic"/>
+	<acme:list-column code="authenticated.announcement.list.label.title"
+		path="title" />
+	<acme:list-column
+		code="authenticated.announcement.list.label.creationMoment"
+		path="creationMoment" />
+
+	<acme:input-textbox code="employer.application.form.label.status"
+		path="status" readonly="true" />
+
+	<acme:list-column code="authenticated.announcement.list.label.link"
+		path="link" />
+
+
+		
+	
+		<acme:list-column
+			code="authenticated.announcement.list.label.critical"
+			path="isCritic" />
 </acme:list>
