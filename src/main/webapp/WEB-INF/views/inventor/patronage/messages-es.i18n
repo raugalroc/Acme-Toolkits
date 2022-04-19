@@ -12,7 +12,7 @@
 inventor.patronage.list.label.finalMomentDate = Fecha final
 inventor.patronage.list.label.link = Enlace
 inventor.patronage.list.label.inventor = Inventor
-inventor.patronage.list.label.patron = Patron
+inventor.patronage.list.label.patron = Patrón
 inventor.patronage.list.label.status = Estado
 inventor.patronage.list.label.legalStuff = Asuntos legales
 inventor.patronage.list.label.budget = Presupuesto total
@@ -24,7 +24,7 @@ inventor.patronage.form.label.startTime = Fecha inicio
 inventor.patronage.form.label.endTime = Fecha final
 inventor.patronage.form.label.link = Enlace
 inventor.patronage.form.label.inventor = Inventor
-inventor.patronage.form.label.patron = Patron
+inventor.patronage.form.label.patron = Patrón
 inventor.patronage.form.label.status = Estado
 inventor.patronage.form.label.legalStuff = Asuntos legales
 inventor.patronage.form.label.budget = Presupuesto total
