@@ -60,7 +60,7 @@ master.menu.consumer.favourite-link = Enlace favorito
 master.menu.inventor = Inventor
 master.menu.inventor.invention.list-tools = Ver mis herramientas
 master.menu.inventor.invention.list-components = Ver mis componentes
-
+master.menu.inventor.patronage.list-patronages = Ver mis esponsorizaciones
 # master.menu.patron #########################################################
 
 master.menu.patron = Patrocinador
