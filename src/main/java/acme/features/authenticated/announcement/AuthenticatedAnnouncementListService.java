@@ -50,9 +50,12 @@ public class AuthenticatedAnnouncementListService implements AbstractListService
 
 		@Override
 		public void unbind(final Request<Announcement> request, final Announcement entity, final Model model) {
+			final String isCritical = "yes", isNotCritical="no";
+			final String criticName = "isCritic";
 			assert request != null;
 			assert entity != null;
 			assert model != null;
+			model.setAttribute(criticName, Boolean.TRUE.equals(entity.getCritic())?isCritical:isNotCritical);
 			request.unbind(entity, model, "creationMoment","title", "body", "critic","link");
 		}
 

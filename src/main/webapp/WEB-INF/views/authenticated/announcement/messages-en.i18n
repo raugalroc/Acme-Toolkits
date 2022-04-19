@@ -9,17 +9,20 @@
 # they accept any liabilities with respect to them.
 
 #####List JSP
-
 authenticated.announcement.list.label.title = Title
 authenticated.announcement.list.label.creationMoment = Creation moment
 authenticated.announcement.list.label.body = Body
 authenticated.announcement.list.label.link = Link
 authenticated.announcement.list.label.critical = Critical
+authenticated.announcement.list.label.critical.yes = Yes
+authenticated.announcement.list.label.critical.no = No
 
 ####Show JSP
-
 authenticated.announcement.form.label.title = Title
 authenticated.announcement.form.label.creationMoment = Creation moment
 authenticated.announcement.form.label.body = Body
 authenticated.announcement.form.label.link = Link
+authenticated.announcement.form.label.critical.yes = Yes
+authenticated.announcement.form.label.critical.no = No
 authenticated.announcement.form.label.critical = Critical
+

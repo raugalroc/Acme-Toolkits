@@ -9,18 +9,20 @@
 # they accept any liabilities with respect to them.
 
 #####List JSP
-
-
 authenticated.announcement.list.label.title = Título
 authenticated.announcement.list.label.creationMoment = Momento de creacion
 authenticated.announcement.list.label.body = Cuerpo
 authenticated.announcement.list.label.link = Enlace
+authenticated.announcement.list.label.critical.yes = Sí
+authenticated.announcement.list.label.critical.no = No
 authenticated.announcement.list.label.critical = Crítico
 
 ####Show JSP
-
 authenticated.announcement.form.label.title = Título
 authenticated.announcement.form.label.creationMoment = Momento de creacion
 authenticated.announcement.form.label.body = Cuerpo
 authenticated.announcement.form.label.link = Enlace
+authenticated.announcement.form.label.critical.yes = Sí
+authenticated.announcement.form.label.critical.no = No
 authenticated.announcement.form.label.critical = Crítico
+
