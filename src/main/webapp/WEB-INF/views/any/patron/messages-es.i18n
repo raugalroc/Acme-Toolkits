@@ -1,8 +1,0 @@
-any.patron.list.label.username = Nombre de Usuario
-any.patron.list.label.company = Comañía
-any.patron.list.label.statement = Declaración
-any.patron.list.label.link = Más Información
-
-any.patron.form.label.name = Nombre
-any.patron.form.label.surname = Apellidos
-any.patron.form.label.email = Email

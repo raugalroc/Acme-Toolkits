@@ -79,6 +79,5 @@ master.menu.user-account.become-consumer = Hazte consumidor
 master.menu.administrator.administrator-dashboard = Panel de Administrador
 
 # master.menu.any ################################
-master.menu.any.patron = Mecenas
-master.menu.any.inventor = Inventores
+master.menu.any.user-account = Cuentas de Usuario
 
