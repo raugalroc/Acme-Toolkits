@@ -22,12 +22,12 @@
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link" action="http://www.example.com/"/>
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link.jespaepae" action="https://coderadio.freecodecamp.org/"/>
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link.pabramber" action="https://www.fromsoftware.jp/ww/"/>
-			<acme:menu-suboption code="77942016F: Pinero Calera, Borja" action="http://www.youtube.com"/>
+			<acme:menu-suboption code="master.menu.anonymous.favourite-link.borpincal" action="http://www.youtube.com"/>
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link.raugalroc" action="https://www.marca.com"/>
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link.juaortgue" action="https://www.game.es"/>
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link.nurgomari" action="https://www.twitch.tv"/>
-	    	<acme:menu-suboption code="master.menu.any.patron" action="/any/patron/list"/>
-	    	<acme:menu-suboption code="master.menu.any.inventor" action="/any/inventor/list"/>
+			<acme:menu-separator/>
+	    	<acme:menu-suboption code="master.menu.any.user-account" action="/any/user-account/list"/>
 			<acme:menu-suboption code="master.menu.anonymous.invention.list-component" action="/any/invention/list-component"/>
 			<acme:menu-suboption code="master.menu.anonymous.chirp.list" action="/any/chirp/list"/>
       
@@ -44,10 +44,11 @@
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.administrator-dashboard" action="/administrator/administrator-dashboard/show"/>
       <acme:menu-separator/>
-			<acme:menu-suboption code="master.menu.any.patron" action="/any/patron/list"/>
-			<acme:menu-suboption code="master.menu.any.inventor" action="/any/inventor/list"/>
+			<acme:menu-suboption code="master.menu.any.user-account" action="/any/user-account/list"/>
       		<acme:menu-suboption code="master.menu.anonymous.invention.list-component" action="/any/invention/list-component"/>
       		<acme:menu-suboption code="master.menu.anonymous.chirp.list" action="/any/chirp/list"/>
+      		<acme:menu-separator/>
+      		<acme:menu-suboption code="master.menu.authenticated.announcement.list" action="/authenticated/announcement/list"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.provider" access="hasRole('Provider')">
@@ -60,6 +61,12 @@
 		
 		<acme:menu-option code="master.menu.patron" access="hasRole('Patron')">
 			<acme:menu-suboption code="master.menu.patron.patronages" action="/patron/patronage/list"/>
+			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.any.user-account" action="/any/user-account/list"/>
+			<acme:menu-suboption code="master.menu.anonymous.invention.list-component" action="/any/invention/list-component"/>
+      		<acme:menu-suboption code="master.menu.anonymous.chirp.list" action="/any/chirp/list"/>
+      		<acme:menu-separator/>
+      		<acme:menu-suboption code="master.menu.authenticated.announcement.list" action="/authenticated/announcement/list"/>
 		</acme:menu-option>
 		
 		<acme:menu-option code="master.menu.inventor" access="hasRole('Inventor')">
@@ -67,6 +74,12 @@
 			<acme:menu-suboption code="master.menu.inventor.invention.list-components" action="/inventor/invention/list-mine?type=COMPONENT"/>
 			<acme:menu-suboption code="master.menu.inventor.patronage.list-patronages" action="/inventor/patronage/list"/>
 			<acme:menu-suboption code="master.menu.inventor.patronage-report" action="/inventor/patronage-report/list"/>
+			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.any.user-account" action="/any/user-account/list"/>
+			<acme:menu-suboption code="master.menu.anonymous.invention.list-component" action="/any/invention/list-component"/>
+      		<acme:menu-suboption code="master.menu.anonymous.chirp.list" action="/any/chirp/list"/>
+      		<acme:menu-separator/>
+      		<acme:menu-suboption code="master.menu.authenticated.announcement.list" action="/authenticated/announcement/list"/>
 		</acme:menu-option>
 		
 		
@@ -77,17 +90,11 @@
 		<acme:menu-option code="master.menu.sign-in" action="/master/sign-in" access="isAnonymous()"/>
 
 		<acme:menu-option code="master.menu.user-account" access="isAuthenticated()">
-		<acme:menu-suboption code="master.menu.authenticated.announcement.list" action="/authenticated/announcement/list"/>
-			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.user-account.general-data" action="/authenticated/user-account/update"/>
 			<acme:menu-suboption code="master.menu.user-account.become-provider" action="/authenticated/provider/create" access="!hasRole('Provider')"/>
 			<acme:menu-suboption code="master.menu.user-account.provider" action="/authenticated/provider/update" access="hasRole('Provider')"/>
 			<acme:menu-suboption code="master.menu.user-account.become-consumer" action="/authenticated/consumer/create" access="!hasRole('Consumer')"/>
 			<acme:menu-suboption code="master.menu.user-account.consumer" action="/authenticated/consumer/update" access="hasRole('Consumer')"/>
-			<acme:menu-suboption code="master.menu.any.patron" action="/any/patron/list"/>
-			<acme:menu-suboption code="master.menu.any.inventor" action="/any/inventor/list"/>
-      		<acme:menu-suboption code="master.menu.anonymous.invention.list-component" action="/any/invention/list-component"/>
-      		<acme:menu-suboption code="master.menu.anonymous.chirp.list" action="/any/chirp/list"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.sign-out" action="/master/sign-out" access="isAuthenticated()"/>
