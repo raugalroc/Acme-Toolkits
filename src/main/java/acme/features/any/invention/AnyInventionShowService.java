@@ -10,7 +10,7 @@ import acme.framework.roles.Any;
 import acme.framework.services.AbstractShowService;
 
 @Service
-public class AnyInventionShowComponentService implements AbstractShowService<Any, Invention> {
+public class AnyInventionShowService implements AbstractShowService<Any, Invention> {
 	
 	// Internal state ---------------------------------------------------------
 

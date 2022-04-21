@@ -12,21 +12,26 @@ import acme.framework.roles.Any;
 @Controller
 public class AnyInventionController extends AbstractController<Any, Invention> {
 	
-	// Internal state ---------------------------------------------------------
+		// Internal state ---------------------------------------------------------
 			
 		@Autowired
 		protected AnyInventionListAllComponentService	listAllComponentService;
 		
 		@Autowired
-		protected AnyInventionShowComponentService			showComponentService;
+		protected AnyInventionShowService			showService;
+		
+		@Autowired
+		protected AnyInventionListAllToolService	listAllToolService;
+		
 		
 		// Constructors -----------------------------------------------------------
 
 
 		@PostConstruct
 		protected void initialise() {
-			super.addCommand("show", this.showComponentService);
+			super.addCommand("show", this.showService);
 			super.addCommand("list-component","list", this.listAllComponentService);
+			super.addCommand("list-tool","list", this.listAllToolService);
 		}
 
 }
