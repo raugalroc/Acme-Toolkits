@@ -34,6 +34,7 @@ master.menu.anonymous.chirp.list = Chirps recientes
 master.menu.authenticated = Authenticated
 master.menu.authenticated.config-data.show = System Currencies
 master.menu.authenticated.announcement.list=List announcements
+master.menu.authenticated.system-configuration = Configuración del sistema
 
 # master.menu.administrator ###################################################
 
