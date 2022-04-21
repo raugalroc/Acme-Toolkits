@@ -63,11 +63,12 @@ master.menu.inventor = Inventor
 master.menu.inventor.invention.list-tools = Ver mis herramientas
 master.menu.inventor.invention.list-components = Ver mis componentes
 master.menu.inventor.patronage.list-patronages = Ver mis esponsorizaciones
-master.menu.inventor.patronage-report = Lista de informes de patrocinios
+master.menu.inventor.patronage-report = Lista de informes de esponsorizaciones
 # master.menu.patron #########################################################
 
 master.menu.patron = Patrocinador
-master.menu.patron.patronages = Lista de patrocinios
+master.menu.patron.patronages = Lista de esponsorizaciones
+master.menu.patron.patronage-report = Lista de infromes de esponsorizaciones
 
 # master.menu.user-account ####################################################
 

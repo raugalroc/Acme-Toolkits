@@ -64,6 +64,7 @@
 		
 		<acme:menu-option code="master.menu.patron" access="hasRole('Patron')">
 			<acme:menu-suboption code="master.menu.patron.patronages" action="/patron/patronage/list"/>
+			<acme:menu-suboption code="master.menu.patron.patronage-report" action="/patron/patronage-report/list"/>
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.any.user-account" action="/any/user-account/list"/>
 			<acme:menu-suboption code="master.menu.anonymous.invention.list-component" action="/any/invention/list-component"/>
