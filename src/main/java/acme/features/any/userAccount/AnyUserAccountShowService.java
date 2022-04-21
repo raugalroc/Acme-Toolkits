@@ -1,6 +1,8 @@
 package acme.features.any.userAccount;
 
-import java.util.Collection;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -43,7 +45,8 @@ public class AnyUserAccountShowService  implements AbstractShowService<Any, User
 		assert model != null;
 		
 		
-		final Collection<UserRole> roles=entity.getRoles();
+		final List<UserRole> roles=new ArrayList<>(entity.getRoles());
+		roles.sort(Comparator.comparing(UserRole::getAuthorityName).reversed());
 		String rolesSt="";
 		
 		model.setAttribute("name", entity.getIdentity().getName());
