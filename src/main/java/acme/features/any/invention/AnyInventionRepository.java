@@ -16,5 +16,8 @@ public interface AnyInventionRepository extends AbstractRepository{
 	
 	@Query("select i from Invention i WHERE i.id = :id")
 	Invention findOneInventionById(int id);
+	
+	@Query("select i from Invention i WHERE i.inventionType = 1")
+	Collection<Invention> findAllTools();
 
 }
