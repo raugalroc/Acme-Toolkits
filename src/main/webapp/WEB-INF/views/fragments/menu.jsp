@@ -49,6 +49,7 @@
       		<acme:menu-suboption code="master.menu.anonymous.chirp.list" action="/any/chirp/list"/>
       		<acme:menu-separator/>
       		<acme:menu-suboption code="master.menu.authenticated.announcement.list" action="/authenticated/announcement/list"/>
+      		<acme:menu-suboption code="master.menu.authenticated.system-configuration" action="/authenticated/system-configuration/show"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.provider" access="hasRole('Provider')">
@@ -67,6 +68,7 @@
       		<acme:menu-suboption code="master.menu.anonymous.chirp.list" action="/any/chirp/list"/>
       		<acme:menu-separator/>
       		<acme:menu-suboption code="master.menu.authenticated.announcement.list" action="/authenticated/announcement/list"/>
+      		<acme:menu-suboption code="master.menu.authenticated.system-configuration" action="/authenticated/system-configuration/show"/>
 		</acme:menu-option>
 		
 		<acme:menu-option code="master.menu.inventor" access="hasRole('Inventor')">
@@ -80,6 +82,7 @@
       		<acme:menu-suboption code="master.menu.anonymous.chirp.list" action="/any/chirp/list"/>
       		<acme:menu-separator/>
       		<acme:menu-suboption code="master.menu.authenticated.announcement.list" action="/authenticated/announcement/list"/>
+      		<acme:menu-suboption code="master.menu.authenticated.system-configuration" action="/authenticated/system-configuration/show"/>
 		</acme:menu-option>
 		
 		

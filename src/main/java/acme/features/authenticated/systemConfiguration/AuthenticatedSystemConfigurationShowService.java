@@ -17,7 +17,7 @@ public class AuthenticatedSystemConfigurationShowService implements AbstractShow
 		@Autowired
 		protected AuthenticatedSystemConfigurationRepository 		repository;
 
-		// AbstractListService<Administrator, SystemConfiguration> interface ---------
+		// AbstractListService<Authenticated, SystemConfiguration> interface ---------
 		
 		@Override
 		public boolean authorise(final Request<SystemConfiguration> request) {
