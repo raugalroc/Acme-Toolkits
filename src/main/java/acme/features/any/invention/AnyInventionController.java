@@ -23,6 +23,8 @@ public class AnyInventionController extends AbstractController<Any, Invention> {
 		@Autowired
 		protected AnyInventionListAllToolService	listAllToolService;
 		
+		@Autowired
+		protected AnyInventionListAllByToolkitService listAllByToolkitService;
 		
 		// Constructors -----------------------------------------------------------
 
@@ -32,6 +34,7 @@ public class AnyInventionController extends AbstractController<Any, Invention> {
 			super.addCommand("show", this.showService);
 			super.addCommand("list-component","list", this.listAllComponentService);
 			super.addCommand("list-tool","list", this.listAllToolService);
+			super.addCommand("list-invention-toolkit",  "list", this.listAllByToolkitService);
 		}
 
 }

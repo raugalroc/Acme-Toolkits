@@ -1,0 +1,28 @@
+
+# i18n-en.i18n
+#
+# Copyright (C) 2012-2022 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+#list
+inventor.toolkit.list.label.code = Código
+inventor.toolkit.list.label.title = Título
+inventor.toolkit.list.label.description = Descripción
+inventor.toolkit.list.button.create= Crear herramienta
+ 
+#show
+
+inventor.toolkit.form.label.code = Código
+inventor.toolkit.form.label.title = Título
+inventor.toolkit.form.label.description = Descripción
+inventor.toolkit.form.label.total-price = Precio total
+inventor.toolkit.form.label.assembly-notes = Notas de montaje
+inventor.toolkit.form.label.link = Enlace
+inventor.toolkit.form.button.items = Objetos
+inventor.toolkit.form.button.create= Crear herramienta
+inventor.toolkit.form.button.inventions = Invenciones de la caja de herramientas

@@ -1,3 +1,10 @@
 key,quantity,key:invention,key:toolkit
-quantity-01,2.0,invention-01,toolkit-01
-quantity-02,4.0,invention-02,toolkit-02
+quantity-01,1.0,invention-01,toolkit-01
+quantity-02,2.0,invention-02,toolkit-02
+quantity-03,3.0,invention-03,toolkit-02
+quantity-04,4.0,invention-04,toolkit-04
+quantity-05,5.0,invention-05,toolkit-05
+quantity-06,6.0,invention-01,toolkit-06
+quantity-07,7.0,invention-01,toolkit-07
+quantity-08,8.0,invention-01,toolkit-02
+quantity-09,9.0,invention-04,toolkit-02
