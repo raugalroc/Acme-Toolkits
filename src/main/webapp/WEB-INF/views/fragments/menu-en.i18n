@@ -29,6 +29,7 @@ master.menu.anonymous.favourite-link.nurgomari = 51210808C: Gómez Arias, Nuria
 
 master.menu.anonymous.invention.list-component = List of components
 master.menu.anonymous.invention.list-tool = List of tools
+master.menu.anonymous.toolkits.list-published-toolkits = Published toolkits
 master.menu.anonymous.chirp.list = Recent chirps
 
 # master.menu.authenticated ##########################################################
@@ -46,6 +47,7 @@ master.menu.administrator.system-configuration = System configuration
 master.menu.administrator.populate-initial = Populate DB (initial)
 master.menu.administrator.populate-sample = Populate DB (samples)
 master.menu.administrator.shut-down = Shut down
+master.menu.administrator.toolkits.list-published-toolkits = Published toolkits
 
 # master.menu.provider ########################################################
 
@@ -63,6 +65,7 @@ master.menu.inventor = Inventor
 master.menu.inventor.toolkits.list-toolkits = List my toolkits
 master.menu.inventor.invention.list-tools = List my tools
 master.menu.inventor.invention.list-components = List my components
+master.menu.inventor.toolkits.list-published-toolkits = Published toolkits
 master.menu.inventor.patronage.list-patronages = Show my patroganes
 master.menu.inventor.patronage-report = List Patronage Reports
 
@@ -71,6 +74,7 @@ master.menu.inventor.patronage-report = List Patronage Reports
 master.menu.patron = Patron
 master.menu.patron.patronages = Patronage List
 master.menu.patron.patronage-report = List my Patronage Reports
+master.menu.patron.toolkits.list-published-toolkits = Published Toolkits
 
 # master.menu.user-account ####################################################
 
