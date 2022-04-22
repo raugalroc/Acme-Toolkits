@@ -17,11 +17,11 @@
 
 <acme:list>
 
-	<acme:list-column code="any.invention.list.label.creationMoment" path="creationMoment" width="20%"/>
-	<acme:list-column code="any.invention.list.label.title" path="title" width="20%"/>
-	<acme:list-column code="any.invention.list.label.author" path="author" width="20%"/>
-	<acme:list-column code="any.invention.list.label.body" path="body" width="20%"/>
-	<acme:list-column code="any.invention.list.label.email" path="email" width="20%"/>
+	<acme:list-column code="any.invention.list.label.creationMoment" path="creationMoment"/>
+	<acme:list-column code="any.invention.list.label.title" path="title"/>
+	<acme:list-column code="any.invention.list.label.author" path="author"/>
+	<acme:list-column code="any.invention.list.label.body" path="body"/>
+	<acme:list-column code="any.invention.list.label.email" path="email"/>
 	
 </acme:list>
 
