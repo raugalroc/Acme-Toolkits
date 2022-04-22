@@ -22,14 +22,13 @@ public class InventorToolkitShowService implements AbstractShowService<Inventor,
 	@Override
 	public boolean authorise(final Request<Toolkit> request) {
 		assert request != null;
-//		boolean result;
-//		int idInventor, idToolkit;
-//		idInventor = request.getPrincipal().getActiveRoleId();
-//		idToolkit = request.getModel().getInteger("id");
-//		final Toolkit t = this.repository.findOneToolkitById(idToolkit);
-//		final Inventor myInventor = this.repository.findOneInventorByToolkitId(t.getId());
-//		result = myInventor.getId()==idInventor;
-		return true;
+		boolean result;
+		int idInventor, idToolkit;
+		idInventor = request.getPrincipal().getActiveRoleId();
+		idToolkit = request.getModel().getInteger("id");
+		final Toolkit t = this.repository.findOneToolkitById(idToolkit);
+		result = idInventor==t.getInventor().getId();
+		return result;
 	}
 
 	@Override
