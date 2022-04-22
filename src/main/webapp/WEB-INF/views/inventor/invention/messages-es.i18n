@@ -1,5 +1,6 @@
 inventor.invention.list.label.code = Código
 inventor.invention.list.label.name = Nombre
+inventor.invention.list.label.draftMode = Publicado
 inventor.invention.list.label.technology = Tecnología
 inventor.invention.list.label.retailPrice = Precio
 
