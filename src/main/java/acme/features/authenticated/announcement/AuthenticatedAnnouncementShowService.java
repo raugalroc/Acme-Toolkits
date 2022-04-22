@@ -70,7 +70,10 @@ public class AuthenticatedAnnouncementShowService implements AbstractShowService
 		assert request != null;
 		assert entity != null;
 		assert model != null;
+		final String isCritical = "yes", isNotCritical="no";
+		final String criticName = "isCritic";
 		request.unbind(entity, model, "creationMoment", "title", "body", "critic", "link");
+		model.setAttribute(criticName, Boolean.TRUE.equals(entity.getCritic())?isCritical:isNotCritical);
 		model.setAttribute("confirmation",false);
 		model.setAttribute("readonly", false);
 	}

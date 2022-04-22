@@ -20,5 +20,5 @@
 	<acme:input-moment code="authenticated.announcement.form.label.creationMoment" path="creationMoment"/>	
 	<acme:input-textarea code="authenticated.announcement.form.label.body" path="body"/>
 	<acme:input-url code="authenticated.announcement.form.label.link" path="link"/>
-	<acme:input-textbox code="authenticated.announcement.form.label.critical" path="critic"/>
+	<acme:input-textbox code="authenticated.announcement.form.label.critical" path="isCritic"/>
 </acme:form>
