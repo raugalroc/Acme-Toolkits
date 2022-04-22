@@ -53,6 +53,9 @@ public class Invention extends AbstractEntity {
 	
 	protected InventionType			inventionType;
 	
+	@NotNull
+	protected Boolean			published;
+	
 	// Derived attributes ----------------------------------------------
 	
 	// Relationships ---------------------------------------------------
