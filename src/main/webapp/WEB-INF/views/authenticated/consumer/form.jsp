@@ -23,7 +23,7 @@
 	<acme:submit test="${command == 'update'}" code="authenticated.consumer.consumer.form.button.update" action="/authenticated/consumer/update"/>
 </acme:form>
 
-<table class="table table-sm">
+<table class="table table-sm" aria-describedby="administrator.dashboard.form.label.average-components.amount">
 	<jstl:forEach var="entry" items="${averageRetailPriceComponents}">
 		<tr>
 			<th scope="row">

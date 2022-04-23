@@ -1,11 +1,8 @@
 package acme.features.inventor.toolkits;
 
-import java.util.Collection;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.entities.inventions.Invention;
 import acme.entities.toolkits.Toolkit;
 import acme.framework.components.models.Model;
 import acme.framework.controllers.Request;
@@ -43,8 +40,6 @@ public class InventorToolkitShowService implements AbstractShowService<Inventor,
 		assert entity != null;
 		assert model != null;
 		final Double totalPrice = this.repository.findTotalRetailPriceByToolkitId(entity.getId());
-		final Collection<Invention> inventions = this.repository.findManyInventionsByToolkitId(entity.getId());
-		//TODO sumar todos los precios en base a la moneda actual que tiene el usuario asignada.
 		model.setAttribute("totalPrice", totalPrice);
 		model.setAttribute("id", entity.getId());
 		request.unbind(entity, model, "code", "title", "description","assemblyNotes","link");

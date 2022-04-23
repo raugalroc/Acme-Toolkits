@@ -11,3 +11,5 @@ patron.dashboard.form.label.maximum.value = Máximo
 
 patron.dashboard.form.label.currency = Moneda
 patron.dashboard.form.label.status = Estado de la esponsorización
+
+patron.dashboard.form.label.number-by-status = Número de esponsorizaciones por estado
