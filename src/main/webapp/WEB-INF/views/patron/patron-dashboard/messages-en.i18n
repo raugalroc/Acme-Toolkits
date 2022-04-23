@@ -1,0 +1,13 @@
+patron.dashboard.form.title.patronages = Patronages
+
+patron.dashboard.form.label.number-proposed = Number of Proposed Patronages
+patron.dashboard.form.label.number-accepted = Number of Accepted Patronages
+patron.dashboard.form.label.number-denied = Number of Denied Patronages
+
+patron.dashboard.form.label.average.value = Average
+patron.dashboard.form.label.deviation.value = Deviation
+patron.dashboard.form.label.minimum.value = Minimum
+patron.dashboard.form.label.maximum.value = Maximum
+
+patron.dashboard.form.label.currency = Currency
+patron.dashboard.form.label.status = Patronage State

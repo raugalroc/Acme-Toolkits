@@ -34,7 +34,7 @@ master.menu.anonymous.chirp.list = Recent chirps
 # master.menu.authenticated ##########################################################
 master.menu.authenticated = Authenticated
 master.menu.authenticated.config-data.show = System Currencies
-master.menu.authenticated.announcement.list=List announcements
+master.menu.authenticated.announcement.list= List announcements
 master.menu.authenticated.system-configuration = System Configuration
 
 # master.menu.administrator ###################################################
@@ -70,6 +70,7 @@ master.menu.inventor.patronage-report = List Patronage Reports
 master.menu.patron = Patron
 master.menu.patron.patronages = Patronage List
 master.menu.patron.patronage-report = List my Patronage Reports
+master.patron.patron-dashboard = Patron Dashboard
 
 # master.menu.user-account ####################################################
 

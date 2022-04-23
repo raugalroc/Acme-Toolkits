@@ -44,7 +44,7 @@
 			<acme:menu-suboption code="master.menu.administrator.shut-down" action="/administrator/shut-down"/>
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.administrator-dashboard" action="/administrator/administrator-dashboard/show"/>
-      <acme:menu-separator/>
+      		<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.any.user-account" action="/any/user-account/list"/>
       		<acme:menu-suboption code="master.menu.anonymous.invention.list-component" action="/any/invention/list-component"/>
       		<acme:menu-suboption code="master.menu.anonymous.invention.list-tool" action="/any/invention/list-tool"/>
@@ -65,6 +65,8 @@
 		<acme:menu-option code="master.menu.patron" access="hasRole('Patron')">
 			<acme:menu-suboption code="master.menu.patron.patronages" action="/patron/patronage/list"/>
 			<acme:menu-suboption code="master.menu.patron.patronage-report" action="/patron/patronage-report/list"/>
+			<acme:menu-separator/>
+      		<acme:menu-suboption code="master.patron.patron-dashboard" action="/patron/patron-dashboard/show"/>
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.any.user-account" action="/any/user-account/list"/>
 			<acme:menu-suboption code="master.menu.anonymous.invention.list-component" action="/any/invention/list-component"/>
