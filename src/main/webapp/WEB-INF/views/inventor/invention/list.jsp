@@ -6,6 +6,7 @@
 <acme:list>
 	<acme:list-column code="inventor.invention.list.label.code" path="code" width="5%"/>
 	<acme:list-column code="inventor.invention.list.label.name" path="name" width="15%"/>
+	<acme:list-column code="inventor.invention.list.label.draftMode" path="published" width="5%"/>
 	<acme:list-column code="inventor.invention.list.label.technology" path="technology" width="15%"/>
-	<acme:list-column code="inventor.invention.list.label.retailPrice" path="retailPrice" width="65%"/>
+	<acme:list-column code="inventor.invention.list.label.retailPrice" path="retailPrice" width="60%"/>
 </acme:list>

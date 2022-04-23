@@ -132,10 +132,10 @@ PatronDashBoard
 + numberProposed: double
 + numberDenied: double
 + numberAccepted: double
-+ averageBudget: Map&lt;String, Pair&lt;Status, Double&gt; &gt;
-+ deviationBudget: Map&lt;String, Pair&lt;Status, Double&gt; &gt;
-+ minimumBudget: Map&lt;String, Pair&lt;Status, Double&gt; &gt;
-+ maximumBudget: Map&lt;String, Pair&lt;Status, Double&gt; &gt;
++ averageBudget: Map&lt;Pair&lt;String, PatronageStatus&gt;, Double&gt;
++ deviationBudget: Map&lt;Pair&lt;String, PatronageStatus&gt;, Double&gt;
++ minimumBudget: Map&lt;Pair&lt;String, PatronageStatus&gt;, Double&gt;
++ maximumBudget: Map&lt;Pair&lt;String, PatronageStatus&gt;, Double&gt;
 </panel_attributes>
     <additional_attributes/>
   </element>
@@ -184,10 +184,10 @@ AdministratorDashBoard
 + minimumRetailPriceTools: Map&lt;String, Double&gt;
 + maximumRetailPriceTools: Map&lt;String, Double&gt;
 + numberPatronages: Map&lt;Status, Double&gt;
-+ averageBudgetPatronage: Map&lt;Status, Double&gt;
-+ deviationBudgetPatronage: Map&lt;Status, Double&gt;
-+ minimumBudgetPatronage: Map&lt;Status, Double&gt;
-+ maximumBudgetPatronage: Map&lt;Status, Double&gt;</panel_attributes>
++ averageBudgetPatronage: Map&lt;PatronageStatus, Double&gt;
++ deviationBudgetPatronage: Map&lt;PatronageStatus, Double&gt;
++ minimumBudgetPatronage: Map&lt;PatronageStatus, Double&gt;
++ maximumBudgetPatronage: Map&lt;PatronageStatus, Double&gt;</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
