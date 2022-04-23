@@ -58,14 +58,15 @@ public class PatronPatronageShowService implements AbstractShowService<Patron, P
 					final String inventorName = inventor.getUserAccount().getIdentity().getName();
 					final String inventorSurname = inventor.getUserAccount().getIdentity().getSurname();
 					final String inventorEmail = inventor.getUserAccount().getIdentity().getEmail();
-					
+					final String inventorLink = inventor.getLink();
 					
 					request.unbind(entity, model, "status", "code", "legalStuff", "budget", "creationTime", "startTime", "endTime", "link");
-					request.unbind(inventor, model, "company", "statement", "link");
+					request.unbind(inventor, model, "company", "statement");
 					model.setAttribute("username", inventorUsername);
 					model.setAttribute("name", inventorName);
 					model.setAttribute("surname", inventorSurname);
 					model.setAttribute("email", inventorEmail);
+					model.setAttribute("inventorLink", inventorLink);
 				}
 
 
