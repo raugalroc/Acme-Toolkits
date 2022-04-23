@@ -1,4 +1,4 @@
-key,quantity,key:invention,key:toolkit
+key,numberOfQuantity,key:invention,key:toolkit
 quantity-01,1.0,invention-02,toolkit-01
 quantity-02,4.0,invention-01,toolkit-01
 quantity-03,3.0,invention-04,toolkit-01

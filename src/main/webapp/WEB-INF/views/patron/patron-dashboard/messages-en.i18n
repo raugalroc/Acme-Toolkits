@@ -11,3 +11,5 @@ patron.dashboard.form.label.maximum.value = Maximum
 
 patron.dashboard.form.label.currency = Currency
 patron.dashboard.form.label.status = Patronage State
+
+patron.dashboard.form.label.number-by-status = Number of Patronages by Status

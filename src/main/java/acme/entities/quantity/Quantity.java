@@ -24,7 +24,7 @@ public class Quantity extends AbstractEntity {
 			// Atributes -------------------------------------------------------
 		
 			@Min(0)
-			protected Double			quantity; 
+			protected Double			numberOfQuantity; 
 			
 			// Derived attributes ----------------------------------------------
 			
