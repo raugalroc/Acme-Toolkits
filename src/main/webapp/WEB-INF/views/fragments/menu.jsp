@@ -30,6 +30,7 @@
 	    	<acme:menu-suboption code="master.menu.any.user-account" action="/any/user-account/list"/>
 			<acme:menu-suboption code="master.menu.anonymous.invention.list-component" action="/any/invention/list-component"/>
 			<acme:menu-suboption code="master.menu.anonymous.invention.list-tool" action="/any/invention/list-tool"/>
+			<acme:menu-suboption code="master.menu.anonymous.toolkits.list-published-toolkits" action="/any/toolkit/list-published"/>
 			<acme:menu-suboption code="master.menu.anonymous.chirp.list" action="/any/chirp/list"/>
       
 		</acme:menu-option>
@@ -48,6 +49,7 @@
 			<acme:menu-suboption code="master.menu.any.user-account" action="/any/user-account/list"/>
       		<acme:menu-suboption code="master.menu.anonymous.invention.list-component" action="/any/invention/list-component"/>
       		<acme:menu-suboption code="master.menu.anonymous.invention.list-tool" action="/any/invention/list-tool"/>
+      		<acme:menu-suboption code="master.menu.administrator.toolkits.list-published-toolkits" action="/any/toolkit/list-published"/>
       		<acme:menu-suboption code="master.menu.anonymous.chirp.list" action="/any/chirp/list"/>
       		<acme:menu-separator/>
       		<acme:menu-suboption code="master.menu.authenticated.announcement.list" action="/authenticated/announcement/list"/>
@@ -71,6 +73,7 @@
 			<acme:menu-suboption code="master.menu.any.user-account" action="/any/user-account/list"/>
 			<acme:menu-suboption code="master.menu.anonymous.invention.list-component" action="/any/invention/list-component"/>
 			<acme:menu-suboption code="master.menu.anonymous.invention.list-tool" action="/any/invention/list-tool"/>
+			<acme:menu-suboption code="master.menu.patron.toolkits.list-published-toolkits" action="/any/toolkit/list-published"/>
       		<acme:menu-suboption code="master.menu.anonymous.chirp.list" action="/any/chirp/list"/>
       		<acme:menu-separator/>
       		<acme:menu-suboption code="master.menu.authenticated.announcement.list" action="/authenticated/announcement/list"/>
@@ -79,6 +82,7 @@
 		
 		<acme:menu-option code="master.menu.inventor" access="hasRole('Inventor')">
 			<acme:menu-suboption code="master.menu.inventor.invention.list-tools" action="/inventor/invention/list-mine?type=TOOL"/>
+			<acme:menu-suboption code="master.menu.inventor.toolkits.list-toolkits" action="/inventor/toolkit/list"/>
 			<acme:menu-suboption code="master.menu.inventor.invention.list-components" action="/inventor/invention/list-mine?type=COMPONENT"/>
 			<acme:menu-suboption code="master.menu.inventor.patronage.list-patronages" action="/inventor/patronage/list"/>
 			<acme:menu-suboption code="master.menu.inventor.patronage-report" action="/inventor/patronage-report/list"/>
@@ -86,6 +90,7 @@
 			<acme:menu-suboption code="master.menu.any.user-account" action="/any/user-account/list"/>
 			<acme:menu-suboption code="master.menu.anonymous.invention.list-component" action="/any/invention/list-component"/>
 			<acme:menu-suboption code="master.menu.anonymous.invention.list-tool" action="/any/invention/list-tool"/>
+			<acme:menu-suboption code="master.menu.inventor.toolkits.list-published-toolkits" action="/any/toolkit/list-published"/>
       		<acme:menu-suboption code="master.menu.anonymous.chirp.list" action="/any/chirp/list"/>
       		<acme:menu-separator/>
       		<acme:menu-suboption code="master.menu.authenticated.announcement.list" action="/authenticated/announcement/list"/>

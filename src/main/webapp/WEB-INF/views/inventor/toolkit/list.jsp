@@ -1,3 +1,4 @@
+
 <%--
 - list.jsp
 -
@@ -16,12 +17,9 @@
 <%@taglib prefix="acme" uri="urn:jsptagdir:/WEB-INF/tags"%>
 
 <acme:list>
-
-	<acme:list-column code="any.invention.list.label.creationMoment" path="creationMoment"/>
-	<acme:list-column code="any.invention.list.label.title" path="title"/>
-	<acme:list-column code="any.invention.list.label.author" path="author"/>
-	<acme:list-column code="any.invention.list.label.body" path="body"/>
-	<acme:list-column code="any.invention.list.label.email" path="email"/>
-	
+	<acme:list-column code="inventor.toolkit.list.label.code" path="code" width="25%"/>
+	<acme:list-column code="inventor.toolkit.list.label.title" path="title" width="25%"/>
+	<acme:list-column code="inventor.toolkit.list.label.description" path="description" width="70%"/>
 </acme:list>
 
+<acme:button code="inventor.toolkit.list.button.create" action="link"/>
