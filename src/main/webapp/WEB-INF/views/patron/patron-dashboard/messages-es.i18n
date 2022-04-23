@@ -1,0 +1,13 @@
+patron.dashboard.form.title.patronages = Esponsorizaciones
+
+patron.dashboard.form.label.number-proposed = Número de Esponsorizaciones Propuestas
+patron.dashboard.form.label.number-accepted = Número de Esponsorizaciones Aceptadas
+patron.dashboard.form.label.number-denied = Número de Esponsorizaciones Denegadas
+
+patron.dashboard.form.label.average.value = Media
+patron.dashboard.form.label.deviation.value = Desviación
+patron.dashboard.form.label.minimum.value = Mínimo
+patron.dashboard.form.label.maximum.value = Máximo
+
+patron.dashboard.form.label.currency = Moneda
+patron.dashboard.form.label.status = Estado de la esponsorización
