@@ -39,6 +39,6 @@
 	<acme:input-textbox code="patron.patronage.form.label.inventor.surname" path="surname"/>
 	<acme:input-textbox code="patron.patronage.form.label.inventor.email" path="email"/>
 	<acme:input-textbox code="patron.patronage.form.label.inventor.statement" path="statement"/>
-	<acme:input-url code="patron.patronage.form.label.inventor.link" path="link"/>
+	<acme:input-url code="patron.patronage.form.label.inventorLink" path="inventorLink"/>
 	
 </acme:form>

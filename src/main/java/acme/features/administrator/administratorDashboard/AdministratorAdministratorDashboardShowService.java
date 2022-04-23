@@ -1,5 +1,6 @@
 package acme.features.administrator.administratorDashboard;
 
+import java.util.EnumMap;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -49,12 +50,12 @@ public class AdministratorAdministratorDashboardShowService implements AbstractS
 	    final Map<String, Double>                  maximumRetailPriceTools= new HashMap<>();
 	    
 	    
-	    final Map<PatronageStatus, Double>             	   numberPatronages = new HashMap<>();
+	    final Map<PatronageStatus, Double>             	   numberPatronages = new EnumMap<>(PatronageStatus.class);
 	    
-	    final Map<PatronageStatus, Double>         averageBudgetPatronage= new HashMap<>();
-	    final Map<PatronageStatus, Double>         deviationBudgetPatronage= new HashMap<>();
-	    final Map<PatronageStatus, Double>         minimumBudgetPatronage= new HashMap<>();
-	    final Map<PatronageStatus, Double>         maximumBudgetPatronage= new HashMap<>();
+	    final Map<PatronageStatus, Double>         averageBudgetPatronage= new EnumMap<>(PatronageStatus.class);
+	    final Map<PatronageStatus, Double>         deviationBudgetPatronage= new EnumMap<>(PatronageStatus.class);
+	    final Map<PatronageStatus, Double>         minimumBudgetPatronage= new EnumMap<>(PatronageStatus.class);
+	    final Map<PatronageStatus, Double>         maximumBudgetPatronage= new EnumMap<>(PatronageStatus.class);
 	    
 	    final AdministratorDashboard result = new AdministratorDashboard();
 	    

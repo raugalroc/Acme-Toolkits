@@ -47,7 +47,7 @@ public class AnyUserAccountShowService  implements AbstractShowService<Any, User
 		
 		final List<UserRole> roles=new ArrayList<>(entity.getRoles());
 		roles.sort(Comparator.comparing(UserRole::getAuthorityName).reversed());
-		String rolesSt="";
+		final StringBuilder rolesSt=new StringBuilder();
 		
 		model.setAttribute("name", entity.getIdentity().getName());
 		model.setAttribute("surname", entity.getIdentity().getSurname());
@@ -56,14 +56,16 @@ public class AnyUserAccountShowService  implements AbstractShowService<Any, User
 		boolean firstIteration=true;
 		
 		for (final UserRole r: roles) {
-			if (firstIteration==true) {
-				rolesSt=r.getAuthorityName();
+			if (firstIteration) {
+				rolesSt.append(r.getAuthorityName());
 				firstIteration=false;
 			}else {
-				rolesSt=rolesSt+", "+r.getAuthorityName();
+				rolesSt.append(", ");
+				rolesSt.append(r.getAuthorityName());
 			}
 		}
-		model.setAttribute("roles", rolesSt);
+		final String str=rolesSt.toString();
+		model.setAttribute("roles", str);
 		
 	}
 }
