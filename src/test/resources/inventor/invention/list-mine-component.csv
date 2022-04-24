@@ -1,2 +1,6 @@
 recordIndex,name,code,published,technology,description,retailPrice,link
 0,screw,ABC-123-A,true,Steel,Quite strong and relatively inexpensive cost,EUR 10.90,https://www.thomann.de/es/neutrik_plastite_b_screw_1_8.htm?gclid=Cj0KCQjw29CRBhCUARIsAOboZbKceumeJa6YA0jcfKcywRnzSBt3eSdImCYVCKzupEIr3aK811_eUmcaAnGuEALw_wcB
+1,nail,AAA-000-A,false,T17VH4gRi0K8Lh5pwoCP3rb00s DCs6pqk3YMNtcgbO0baAZytupih9VOpzee hJOX4MSW9t5mpVeToCwI5gULYcluW VNk9IO3G,zZZzaAAabBBbBBbDDDdDF,EUR 100.50,
+2,glue,GLU-000-E,true,"Made out of animal parts like meat,skin,hides and bone of bulky muscular animals like a horse andpig",Glue is the most used form of adhesive in frequent basis.,EUR 20.99,https://www.amazon.com
+3,glue,GLU-002-E,false,"Made out of animal parts like meat,skin,hides and bone of bulky muscular animals like a horse andpig",Glue is the most used form of adhesive in frequent basis.,EUR 40.99,https://www.aliexpress.com
+4,nail,AAA-019-O,true,abc def ghi jkl mno pqrs tuv wxyz ABC DEF GHI JKL MNO PQRS TUV WXYZ,abc def ghi jkl mno pqrs tuv wxyz ABC DEF GHI JKL MNO PQRS TUV WXYZ,EUR 100.50,
