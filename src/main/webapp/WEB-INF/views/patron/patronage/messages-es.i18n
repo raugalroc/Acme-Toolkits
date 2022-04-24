@@ -18,11 +18,9 @@ patron.patronage.form.label.startTime = Fecha de comienzo:
 patron.patronage.form.label.endTime = Fecha de finalización:
 patron.patronage.form.label.link = Enlace:
 
-patron.patronage.message.inventor = Perfil de Inventor
-patron.patronage.form.label.inventor.username = Nombre de Usuario
+patron.patronage.message.inventor = Datos del inventor
+
 patron.patronage.form.label.inventor.name = Nombre
 patron.patronage.form.label.inventor.surname = Apellidos
 patron.patronage.form.label.inventor.email = Email
 patron.patronage.form.label.inventor.company = Compañía
-patron.patronage.form.label.inventor.statement = Declaración
-patron.patronage.form.label.inventorLink = Enlace

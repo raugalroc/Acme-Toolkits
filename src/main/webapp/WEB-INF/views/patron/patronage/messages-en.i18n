@@ -18,11 +18,10 @@ patron.patronage.form.label.startTime = Start Time:
 patron.patronage.form.label.endTime = End Time:
 patron.patronage.form.label.link = Link:
 
-patron.patronage.message.inventor = Inventor Profile
-patron.patronage.form.label.inventor.username = Username
+patron.patronage.message.inventor = Inventor’s Data
+
 patron.patronage.form.label.inventor.name = Name
 patron.patronage.form.label.inventor.surname = Surname
 patron.patronage.form.label.inventor.email = Email
 patron.patronage.form.label.inventor.company = Company
-patron.patronage.form.label.inventor.statement = Statement
-patron.patronage.form.label.inventorLink = Link
+

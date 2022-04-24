@@ -33,12 +33,11 @@
 	
 	<h2><acme:message code="patron.patronage.message.inventor"/></h2>
 	
-	<acme:input-textbox code="patron.patronage.form.label.inventor.username" path="username"/>
-	<acme:input-textbox code="patron.patronage.form.label.inventor.company" path="company"/>
+	
 	<acme:input-textbox code="patron.patronage.form.label.inventor.name" path="name"/>
 	<acme:input-textbox code="patron.patronage.form.label.inventor.surname" path="surname"/>
 	<acme:input-textbox code="patron.patronage.form.label.inventor.email" path="email"/>
-	<acme:input-textbox code="patron.patronage.form.label.inventor.statement" path="statement"/>
-	<acme:input-url code="patron.patronage.form.label.inventorLink" path="inventorLink"/>
+	<acme:input-textbox code="patron.patronage.form.label.inventor.company" path="company"/>
+	
 	
 </acme:form>

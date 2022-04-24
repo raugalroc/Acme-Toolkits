@@ -8,6 +8,7 @@ import acme.framework.components.models.Model;
 import acme.framework.controllers.Request;
 import acme.framework.roles.Any;
 import acme.framework.services.AbstractShowService;
+import acme.roles.Inventor;
 
 @Service
 public class AnyInventionShowService implements AbstractShowService<Any, Invention> {
@@ -44,8 +45,17 @@ public class AnyInventionShowService implements AbstractShowService<Any, Inventi
 				assert request != null;
 				assert entity != null;
 				assert model != null;
+				
+				final Inventor inventor = entity.getInventor();
+				
+				final String inventorName = inventor.getUserAccount().getIdentity().getName();
+				final String inventorSurname = inventor.getUserAccount().getIdentity().getSurname();
+				final String inventorEmail = inventor.getUserAccount().getIdentity().getEmail();
 
 				request.unbind(entity, model, "code", "name", "technology", "description", "retailPrice", "link");
+				model.setAttribute("name", inventorName);
+				model.setAttribute("surname", inventorSurname);
+				model.setAttribute("email", inventorEmail);
 			}
 
 }
