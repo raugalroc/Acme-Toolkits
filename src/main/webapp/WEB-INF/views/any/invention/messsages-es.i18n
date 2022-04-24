@@ -13,6 +13,11 @@ any.invention.list.label.name = Nombre
 any.invention.list.label.technology = Tecnología
 any.invention.list.label.retailPrice = Precio de venta al público
 
+any.invention.message.inventor = Datos del inventor
+any.invention.form.label.inventor.name = Nombre
+any.invention.form.label.inventor.surname = Apellidos
+any.invention.form.label.inventor.email = Email
+
 any.invention.form.label.code = Código:
 any.invention.form.label.name = Nombre:
 any.invention.form.label.technology = Tecnología:

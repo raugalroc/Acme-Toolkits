@@ -23,4 +23,10 @@
 	<acme:input-money code="any.invention.form.label.retailPrice" path="retailPrice"/>
 	<acme:input-url code="any.invention.form.label.link" path="link"/>
 	
+	<h2><acme:message code="any.invention.message.inventor"/></h2>
+	
+	<acme:input-textbox code="any.invention.form.label.inventor.name" path="name"/>
+	<acme:input-textbox code="any.invention.form.label.inventor.surname" path="surname"/>
+	<acme:input-textbox code="any.invention.form.label.inventor.email" path="email"/>
+	
 </acme:form>
