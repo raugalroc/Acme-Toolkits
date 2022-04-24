@@ -14,7 +14,7 @@ any.invention.list.label.technology = Technology
 any.invention.list.label.retailPrice = Retail Price
 
 any.invention.message.inventor = Inventor’s Data
-any.invention.form.label.inventor.name = Name
+any.invention.form.label.inventor.inventorName = Name
 any.invention.form.label.inventor.surname = Surname
 any.invention.form.label.inventor.email = Email
 

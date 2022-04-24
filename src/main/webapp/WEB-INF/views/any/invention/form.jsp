@@ -25,7 +25,7 @@
 	
 	<h2><acme:message code="any.invention.message.inventor"/></h2>
 	
-	<acme:input-textbox code="any.invention.form.label.inventor.name" path="name"/>
+	<acme:input-textbox code="any.invention.form.label.inventor.inventorName" path="inventorName"/>
 	<acme:input-textbox code="any.invention.form.label.inventor.surname" path="surname"/>
 	<acme:input-textbox code="any.invention.form.label.inventor.email" path="email"/>
 	

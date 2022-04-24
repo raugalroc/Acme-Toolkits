@@ -53,7 +53,7 @@ public class AnyInventionShowService implements AbstractShowService<Any, Inventi
 				final String inventorEmail = inventor.getUserAccount().getIdentity().getEmail();
 
 				request.unbind(entity, model, "code", "name", "technology", "description", "retailPrice", "link");
-				model.setAttribute("name", inventorName);
+				model.setAttribute("inventorName", inventorName);
 				model.setAttribute("surname", inventorSurname);
 				model.setAttribute("email", inventorEmail);
 			}
