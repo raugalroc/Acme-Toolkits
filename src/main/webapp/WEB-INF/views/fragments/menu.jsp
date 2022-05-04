@@ -95,6 +95,8 @@
       		<acme:menu-separator/>
       		<acme:menu-suboption code="master.menu.authenticated.announcement.list" action="/authenticated/announcement/list"/>
       		<acme:menu-suboption code="master.menu.authenticated.system-configuration" action="/authenticated/system-configuration/show"/>
+      		<acme:menu-separator/>
+      		<acme:menu-suboption code="master.menu.inventor.invention.create" action="/inventor/invention/create"/>
 		</acme:menu-option>
 		
 		

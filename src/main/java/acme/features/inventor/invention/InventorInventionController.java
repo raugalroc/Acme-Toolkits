@@ -20,13 +20,30 @@ public class InventorInventionController extends AbstractController<Inventor, In
 	@Autowired
 	protected InventorInventionShowMineService		showService;
 	
+	@Autowired
+	protected InventorInventionUpdateService		updateService;
+	
+	@Autowired
+	protected InventorInventionDeleteService		deleteService;
+	
+	@Autowired
+	protected InventorInventionPublishService		publishService;
+	
+	@Autowired
+	protected InventorInventionCreateService		createService;
+	
+	
+	
 	// Constructors --------------------------------------------------------------
 	
 	@PostConstruct
 	protected void initialise() {
 		super.addCommand("show", this.showService);
-		
 		super.addCommand("list-mine", "list", this.listMineService);
+		super.addCommand("create", this.createService);
+		super.addCommand("update", this.updateService);
+		super.addCommand("delete", this.deleteService);
+		super.addCommand("publish", "update", this.publishService);
 	}
 	
 }

@@ -68,6 +68,7 @@ master.menu.inventor.invention.list-components = Ver mis componentes
 master.menu.inventor.toolkits.list-published-toolkits = Cajas de herramientas publicadas
 master.menu.inventor.patronage.list-patronages = Ver mis esponsorizaciones
 master.menu.inventor.patronage-report = Lista de informes de esponsorizaciones
+master.menu.inventor.invention.create = Crear invención
 
 # master.menu.patron #########################################################
 
