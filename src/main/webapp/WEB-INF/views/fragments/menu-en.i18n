@@ -68,6 +68,7 @@ master.menu.inventor.invention.list-components = List my components
 master.menu.inventor.toolkits.list-published-toolkits = Published toolkits
 master.menu.inventor.patronage.list-patronages = Show my patroganes
 master.menu.inventor.patronage-report = List Patronage Reports
+master.menu.inventor.invention.create = Create Invention
 
 # master.menu.patron #########################################################
 

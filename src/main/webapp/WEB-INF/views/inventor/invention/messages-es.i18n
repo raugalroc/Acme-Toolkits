@@ -10,3 +10,19 @@ inventor.invention.form.label.technology = Tecnología
 inventor.invention.form.label.description = Descripción
 inventor.invention.form.label.retailPrice = Precio
 inventor.invention.form.label.link = Más información
+inventor.invention.form.label.inventionType = Tipo de Invención
+inventor.invention.form.label.published = ¿Está publicado?
+true = Sí
+false = No
+component = Component
+tool = Tool
+
+inventor.invention.form.button.update = Actualizar Invención
+inventor.invention.form.button.delete = Borrar Invención
+inventor.invention.form.button.publish = Publicar Invención
+inventor.invention.form.button.create = Crear Invención
+
+inventor.invention.form.error.code.duplicated = Este código está cogido
+inventor.invention.form.error.retailPrice.invalid = El tipo de moneda no está soportado por el sistema
+
+inventor.invention.form.button.create = Crear

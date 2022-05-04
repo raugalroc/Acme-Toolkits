@@ -10,3 +10,4 @@
 	<acme:list-column code="inventor.invention.list.label.technology" path="technology" width="15%"/>
 	<acme:list-column code="inventor.invention.list.label.retailPrice" path="retailPrice" width="60%"/>
 </acme:list>
+<acme:button code="inventor.invention.form.button.create" action="/inventor/invention/create"/>
