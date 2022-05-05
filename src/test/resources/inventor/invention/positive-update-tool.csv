@@ -1,0 +1,10 @@
+recordIndex,name,code,technology,description,retail-price,link,invention-type,published
+0,"nail","AAA-003-A","T17VH4gRi0K8Lh5pwoCP3rb00s DCs6pqk3YMNtcgbO0baAZytupih9VOpzee hJOX4MSW9t5mpVeToCwI5gULYcluW VNk9IO3G","zZZzaAAabBBbBBbDDDdDF","EUR 100.50","http://www.example.com",TOOL,false
+0,"nail","AAA-003-A","a","zZZzaAAabBBbBBbDDDdDF","EUR 100.50","http://www.example.com",TOOL,false
+0,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean m","AAA-003-A","a","zZZzaAAabBBbBBbDDDdDF","EUR 100.50","http://www.example.com",TOOL,false
+0,"nail","AAA-003-A","a","Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,","EUR 100.50","http://www.example.com",TOOL,false
+0,"nail","AAA-003-A","a","a","EUR 100.50","http://www.example.com",TOOL,false
+0,"nail","AAA-003-A","a","a","EUR 0.10","http://www.example.com",TOOL,false
+0,"nail","AAA-003-A","a","a","USD 0.10","http://www.example.com",TOOL,false
+0,"nail","AAA-003-A","a","a","EUR 1,000,000,000.10","http://www.example.com",TOOL,false
+0,"nail","AAA-003-A","a","a","EUR 1,000,000,000.10","http://www.example.com",TOOL,false

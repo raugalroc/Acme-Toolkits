@@ -1,0 +1,8 @@
+recordIndex,name,code,technology,description,retail-price,link,invention-type,published
+0,,,,,,,COMPONENT,true
+0,"nail","GLU-002-E","a","zZZzaAAabBBbBBbDDDdDF","EUR 100.50","http://www.example.com",COMPONENT,true
+0,"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean ma","AAA-001-A","a","zZZzaAAabBBbBBbDDDdDF","EUR 100.50","http://www.example.com",COMPONENT,true
+0,"nail","AAA-001-A","a","Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,Q","EUR 100.50","http://www.example.com",COMPONENT,true
+0,"nail","AAA-001-A","Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean ma","a","EUR 100.50","http://www.example.com",COMPONENT,true
+0,"nail","AAA-001-A","a","a","QX 0.10","http://www.example.com",COMPONENT,true
+0,"nail","AAA-001-A","a","a","EUR 10,000,000,000.10","http://www.example.com",COMPONENT,true

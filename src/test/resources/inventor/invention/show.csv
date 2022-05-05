@@ -1,2 +1,2 @@
-recordIndex,name,code,technology,description,retailPrice,link
-0,screw,ABC-123-A,Steel,Quite strong and relatively inexpensive cost,EUR 10.90,https://www.thomann.de/es/neutrik_plastite_b_screw_1_8.htm?gclid=Cj0KCQjw29CRBhCUARIsAOboZbKceumeJa6YA0jcfKcywRnzSBt3eSdImCYVCKzupEIr3aK811_eUmcaAnGuEALw_wcB
+recordIndex,name,code,technology,description,retail-price,link,invention-type,published,invention-type-st,published-st
+0,"nail","AAA-000-A","T17VH4gRi0K8Lh5pwoCP3rb00s DCs6pqk3YMNtcgbO0baAZytupih9VOpzee hJOX4MSW9t5mpVeToCwI5gULYcluW VNk9IO3G","zZZzaAAabBBbBBbDDDdDF","EUR 100.50",,COMPONENT,false,Component,No
