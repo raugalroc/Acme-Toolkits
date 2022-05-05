@@ -16,7 +16,7 @@ public class InventorInventionShowTest extends TestHarness {
 	@ParameterizedTest
 	@CsvFileSource(resources = "/inventor/invention/show.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
-	public void positiveTest(final int recordIndex, final String name, final String code, final String technology, final String description, final String retailPrice, final String link) {
+	public void positiveTest(final int recordIndex, final String name, final String code, final String technology, final String description, final String retailPrice, final String link, final String inventionType,final String published, final String inventionTypeSt, final String publishedSt) {
 		super.signIn("inventor1", "inventor1");
 
 		super.clickOnMenu("Inventor", "List my components");
@@ -29,13 +29,16 @@ public class InventorInventionShowTest extends TestHarness {
 		super.checkInputBoxHasValue("description", description);
 		super.checkInputBoxHasValue("retailPrice", retailPrice);
 		super.checkInputBoxHasValue("link", link);
+		super.checkInputBoxHasValue("published", publishedSt);
+		super.checkInputBoxHasValue("inventionType", inventionTypeSt);
+		
 
 		super.signOut();
 	}
 	
 	@ParameterizedTest
 	@CsvFileSource(resources = "/inventor/invention/show.csv", encoding = "utf-8", numLinesToSkip = 1)
-	@Order(10)
+	@Order(20)
 	public void negativeTest(final int recordIndex, final String name, final String code, final String technology, final String description, final String retailPrice, final String link) {
 		super.signIn("inventor1", "inventor1");
 		

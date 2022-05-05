@@ -16,12 +16,12 @@ public class InventorInventionListMineTest extends TestHarness {
 	@ParameterizedTest
 	@CsvFileSource(resources = "/inventor/invention/list-mine-tool.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
-	public void positiveTestListMyTools(final int recordIndex, final String name, final String code, final String published, final String technology, final String description, final String retailPrice, final String link) {
+	public void positiveTestListMyTools(final int recordIndex, final String name, final String code, final String technology, final String description, final String retailPrice, final String link, final String inventionType,final String published, final String inventionTypeSt, final String publishedSt) {
 		super.signIn("inventor1", "inventor1");
 
 		super.clickOnMenu("Inventor", "List my tools");
 		super.checkCurrentUrl("http://localhost:8081/acme-toolkits-22.1/inventor/invention/list-mine?type=TOOL");
-		
+		super.sortListing(0, "asc");
 		super.checkListingExists();
 		super.checkNotListingEmpty();
 		
@@ -32,6 +32,7 @@ public class InventorInventionListMineTest extends TestHarness {
 		super.checkColumnHasValue(recordIndex, 4, retailPrice);
 
 		super.clickOnListingRecord(recordIndex);
+		
 		super.checkFormExists();
 		super.checkInputBoxHasValue("code", code);
 		super.checkInputBoxHasValue("name", name);
@@ -39,14 +40,16 @@ public class InventorInventionListMineTest extends TestHarness {
 		super.checkInputBoxHasValue("description", description);
 		super.checkInputBoxHasValue("retailPrice", retailPrice);
 		super.checkInputBoxHasValue("link", link);
+		super.checkInputBoxHasValue("published", publishedSt);
+		super.checkInputBoxHasValue("inventionType", inventionTypeSt);
 
 		super.signOut();
 	}
 	
 	@ParameterizedTest
 	@CsvFileSource(resources = "/inventor/invention/list-mine-component.csv", encoding = "utf-8", numLinesToSkip = 1)
-	@Order(10)
-	public void positiveTestListMyComponents(final int recordIndex, final String name, final String code, final String published, final String technology, final String description, final String retailPrice, final String link) {
+	@Order(20)
+	public void positiveTestListMyComponents(final int recordIndex, final String name, final String code, final String technology, final String description, final String retailPrice, final String link, final String inventionType,final String published, final String inventionTypeSt, final String publishedSt) {
 		super.signIn("inventor1", "inventor1");
 
 		super.clickOnMenu("Inventor", "List my components");
@@ -55,6 +58,8 @@ public class InventorInventionListMineTest extends TestHarness {
 		super.checkListingExists();
 		super.checkNotListingEmpty();
 		
+		super.sortListing(0, "asc");
+		
 		super.checkColumnHasValue(recordIndex, 0, code);
 		super.checkColumnHasValue(recordIndex, 1, name);
 		super.checkColumnHasValue(recordIndex, 2, published);
@@ -69,20 +74,23 @@ public class InventorInventionListMineTest extends TestHarness {
 		super.checkInputBoxHasValue("description", description);
 		super.checkInputBoxHasValue("retailPrice", retailPrice);
 		super.checkInputBoxHasValue("link", link);
+		super.checkInputBoxHasValue("published", publishedSt);
+		super.checkInputBoxHasValue("inventionType", inventionTypeSt);
 
 		super.signOut();
 	}
 	
 	@ParameterizedTest
 	@CsvFileSource(resources = "/inventor/invention/list-mine-component.csv", encoding = "utf-8", numLinesToSkip = 1)
-	@Order(10)
-	public void negativeTest(final int recordIndex, final String name, final String code, final String published, final String technology, final String description, final String retailPrice, final String link) {
+	@Order(30)
+	public void negativeTest(final int recordIndex, final String name, final String code, final String technology, final String description, final String retailPrice, final String link, final String inventionType,final String published, final String inventionTypeSt, final String publishedSt) {
 		super.signIn("inventor1", "inventor1");
 		
 		super.navigate("/inventor/invention/list-mine");
 		super.checkCurrentUrl("http://localhost:8081/acme-toolkits-22.1/inventor/invention/list-mine?language=en&debug=true");
 		super.checkListingExists();
 		super.checkListingEmpty();
+		super.sortListing(0, "asc");
 		
 		this.navigateWithQuery();
 		
@@ -90,9 +98,11 @@ public class InventorInventionListMineTest extends TestHarness {
 		super.checkCurrentUrl("http://localhost:8081/acme-toolkits-22.1/inventor/invention/list-mine?language=en&debug=true&type=InvalidQuery");
 		super.checkListingExists();
 		super.checkListingEmpty();
+		super.sortListing(0, "asc");
 		
 		super.navigate("/inventor/invention/list-mine", "type=CompONent");
 		super.checkCurrentUrl("http://localhost:8081/acme-toolkits-22.1/inventor/invention/list-mine?language=en&debug=true&type=CompONent");
+		super.sortListing(0, "asc");
 		super.checkListingExists();
 		super.checkNotListingEmpty();
 		super.checkColumnHasValue(recordIndex, 0, code);
