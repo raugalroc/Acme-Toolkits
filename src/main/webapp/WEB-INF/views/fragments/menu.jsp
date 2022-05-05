@@ -32,6 +32,7 @@
 			<acme:menu-suboption code="master.menu.anonymous.invention.list-tool" action="/any/invention/list-tool"/>
 			<acme:menu-suboption code="master.menu.anonymous.toolkits.list-published-toolkits" action="/any/toolkit/list-published"/>
 			<acme:menu-suboption code="master.menu.anonymous.chirp.list" action="/any/chirp/list"/>
+			<acme:menu-suboption code="master.menu.anonymous.chirp.create" action="/any/chirp/create"/>
       
 		</acme:menu-option>
 
