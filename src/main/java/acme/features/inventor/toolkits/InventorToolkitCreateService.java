@@ -64,6 +64,14 @@ public class InventorToolkitCreateService implements AbstractCreateService<Inven
 			existing = this.repository.findOneToolkitByCode(entity.getCode());
 			errors.state(request, existing == null, "code", "inventor.toolkit.form.error.duplicated");
 		}
+		
+		{
+			Boolean isSpam;
+			
+			isSpam = entity.isSpam(this.repository.getSystemConfiguration());
+			
+			errors.state(request, !isSpam, "*", "inventor.toolkit.form.error.spam");
+		}
 
 	}
 

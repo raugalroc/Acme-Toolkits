@@ -7,6 +7,7 @@ import org.springframework.stereotype.Repository;
 
 import acme.entities.inventions.Invention;
 import acme.entities.quantity.Quantity;
+import acme.entities.systemConfiguration.SystemConfiguration;
 import acme.entities.toolkits.Toolkit;
 import acme.framework.repositories.AbstractRepository;
 import acme.roles.Inventor;
@@ -34,5 +35,8 @@ public interface InventorToolkitRepository extends AbstractRepository{
 
 	@Query("SELECT q FROM Quantity q WHERE q.toolkit.id = ?1")
 	Collection<Quantity> findManyQuantitiesByToolkitId(int id);
+
+	@Query("SELECT c FROM SystemConfiguration c")
+	SystemConfiguration getSystemConfiguration();
 	
 }

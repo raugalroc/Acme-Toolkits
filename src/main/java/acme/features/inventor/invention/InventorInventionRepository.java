@@ -7,6 +7,7 @@ import org.springframework.stereotype.Repository;
 
 import acme.entities.inventions.Invention;
 import acme.entities.inventions.InventionType;
+import acme.entities.systemConfiguration.SystemConfiguration;
 import acme.framework.repositories.AbstractRepository;
 import acme.roles.Inventor;
 
@@ -27,4 +28,8 @@ public interface InventorInventionRepository extends AbstractRepository {
 	
 	@Query("SELECT ac.acceptedCurrencies from SystemConfiguration ac")
 	String findAcceptedCurrencies();
+
+	@Query("SELECT c FROM SystemConfiguration c")
+	SystemConfiguration getSystemConfiguration();
+	
 }
