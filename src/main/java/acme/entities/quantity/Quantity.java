@@ -19,12 +19,12 @@ public class Quantity extends AbstractEntity {
 	
 	// Serialisation identifier ----------------------------------------
 	
-			protected static final long serialVersionUID		= 1L;
+			protected static final long 	serialVersionUID		= 1L;
 			
 			// Atributes -------------------------------------------------------
 		
-			@Min(0)
-			protected Double			numberOfQuantity; 
+			@Min(1)
+			protected int					numberOfQuantity; 
 			
 			// Derived attributes ----------------------------------------------
 			

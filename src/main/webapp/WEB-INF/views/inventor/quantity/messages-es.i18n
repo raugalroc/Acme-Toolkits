@@ -1,0 +1,15 @@
+inventor.quantity.list.label.invention.code = Código de la invención
+inventor.quantity.list.label.numberOfQuantity = Cantidad
+
+inventor.quantity.list.button.create = Crear
+
+inventor.quantity.form.label.invention.code = Código de la invención
+inventor.quantity.form.label.numberOfQuantity = Cantidad
+
+inventor.quantity.form.button.update = Actualizar
+inventor.quantity.form.button.delete = Borrar
+inventor.quantity.form.button.create = Crear
+
+inventor.quantity.form.error.invalid = Este código no corresponde con ninguna invención
+inventor.quantity.form.error.exceed = La cantidad de un componente no puede ser mayor de 1
+inventor.quantity.form.error.duplicated = Ya tienes esta invención en uso; usa otra o actualiza la misma

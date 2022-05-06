@@ -13,7 +13,7 @@ import acme.framework.services.AbstractListService;
 import acme.roles.Inventor;
 
 @Service
-public class InventorToolkitListAllService implements AbstractListService<Inventor, Toolkit> {
+public class InventorToolkitListMineService implements AbstractListService<Inventor, Toolkit> {
 
 	@Autowired
 	protected InventorToolkitRepository repository;
@@ -41,7 +41,7 @@ public class InventorToolkitListAllService implements AbstractListService<Invent
 		assert entity != null;
 		assert model != null;
 		
-		request.unbind(entity, model, "code", "title", "description");
+		request.unbind(entity, model, "code", "title", "published", "description");
 
 	}
 

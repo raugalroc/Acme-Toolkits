@@ -1,28 +1,22 @@
-
-# i18n-en.i18n
-#
-# Copyright (C) 2012-2022 Rafael Corchuelo.
-#
-# In keeping with the traditional purpose of furthering education and research, it is
-# the policy of the copyright owner to permit non-commercial use and redistribution of
-# this software. It has been tested carefully, but it is not guaranteed for any particular
-# purposes.  The copyright owner does not offer any warranties or representations, nor do
-# they accept any liabilities with respect to them.
-
-#list
 inventor.toolkit.list.label.code = Code
 inventor.toolkit.list.label.title = Title
+inventor.toolkit.list.label.published = Published
 inventor.toolkit.list.label.description = Description
-inventor.toolkit.list.button.create= Create toolkit
- 
-#show
 
+inventor.toolkit.list.button.create = Create toolkit
+ 
 inventor.toolkit.form.label.code = Code
 inventor.toolkit.form.label.title = Title
 inventor.toolkit.form.label.description = Description
 inventor.toolkit.form.label.total-price = Total Price (EUR)
 inventor.toolkit.form.label.assembly-notes = Assembly Notes
 inventor.toolkit.form.label.link = Link
-inventor.toolkit.form.button.items = Items
-inventor.toolkit.form.button.create= Create toolkit
-inventor.toolkit.form.button.inventions = Toolkit's invention
+
+inventor.toolkit.form.button.quantities = Inventions' quantities
+inventor.toolkit.form.button.update = Update
+inventor.toolkit.form.button.delete = Delete
+inventor.toolkit.form.button.publish = Publish
+inventor.toolkit.form.button.create = Create
+
+inventor.toolkit.form.error.duplicated = This code is already in use
+inventor.toolkit.form.error.not-all-published = There are unpublished inventions

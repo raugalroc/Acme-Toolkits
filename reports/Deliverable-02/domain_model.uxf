@@ -472,7 +472,7 @@ InventionType
 &lt;&lt;Entity&gt;&gt;
 Quantity
 --
-+ numberOfQuantity: Double {Min(0)}</panel_attributes>
++ numberOfQuantity: Integer {Min(1), NotNull}</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
