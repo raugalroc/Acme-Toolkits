@@ -52,6 +52,7 @@ Chirp
 + author: String {NotBlank, Length(0, 100)}
 + body: String {NotBlank, Length(0, 255)}
 + email: String {Email}
++ / spam: Boolean {Transient}
 </panel_attributes>
     <additional_attributes/>
   </element>
@@ -71,7 +72,8 @@ Announcement
 + title: String {NotBlank, Length(0, 100)}
 + body: String {NotBlank, Length(0, 255)}
 + critic: boolean
-+ link: String {URL}</panel_attributes>
++ link: String {URL}
++ / spam: Boolean {Transient}</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -80,7 +82,7 @@ Announcement
       <x>350</x>
       <y>658</y>
       <w>350</w>
-      <h>126</h>
+      <h>133</h>
     </coordinates>
     <panel_attributes>bg=green
 &lt;&lt;Entity&gt;&gt;
@@ -93,7 +95,8 @@ Invention
 + retailPrice: Money {Valid}
 + link: String {URL}
 + inventionType: InventionType
-+ published: Boolean {NotNull}</panel_attributes>
++ published: Boolean {NotNull}
++ / spam: Boolean {Transient}</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -102,7 +105,7 @@ Invention
       <x>357</x>
       <y>987</y>
       <w>315</w>
-      <h>105</h>
+      <h>112</h>
     </coordinates>
     <panel_attributes>bg=green
 &lt;&lt;Entity&gt;&gt;
@@ -114,6 +117,7 @@ Toolkit
 + assemblyNotes: String  {NotBlank, Length(0, 255)}
 + link: String {URL}
 + published: Boolean {NotNull}
++ / spam: Boolean {Transient}
 </panel_attributes>
     <additional_attributes/>
   </element>
@@ -527,15 +531,15 @@ must be positive</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>511</x>
-      <y>777</y>
+      <y>784</y>
       <w>49</w>
-      <h>98</h>
+      <h>91</h>
     </coordinates>
     <panel_attributes>lt=&lt;-x
 m1=1
 m2=0..*
 has v</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;110.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>

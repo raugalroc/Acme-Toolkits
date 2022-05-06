@@ -72,13 +72,14 @@ public class InventorInventionPublishService implements AbstractUpdateService<In
 		assert entity != null;
 		assert errors != null;
 		
-		if(!errors.hasErrors("code")) {
+		if (!errors.hasErrors("code")) {
 			Invention existing;
 			
 			existing=this.repository.findOneComponentByCode(entity.getCode());
 			errors.state(request, existing == null || existing.getId() == entity.getId(), "code", "inventor.invention.form.error.code.duplicated");
 		}
-		if(!errors.hasErrors("retailPrice")) {
+		
+		if (!errors.hasErrors("retailPrice")) {
 			final Set<String> acceptedCurrencies;
 			final String[] acceptedCurrenciesSt=this.repository.findAcceptedCurrencies().split(";");
 			acceptedCurrencies=new HashSet<String>();
@@ -87,6 +88,14 @@ public class InventorInventionPublishService implements AbstractUpdateService<In
 			errors.state(request, acceptedCurrencies.contains(entity.getRetailPrice().getCurrency()) , "retailPrice", "inventor.invention.form.error.retailPrice.invalid");
 		}
 		
+		{
+			Boolean isSpam;
+			
+			isSpam = entity.isSpam(this.repository.getSystemConfiguration());
+			
+			errors.state(request, !isSpam, "*", "inventor.invention.form.error.spam");
+		}
+
 	}
 
 	@Override

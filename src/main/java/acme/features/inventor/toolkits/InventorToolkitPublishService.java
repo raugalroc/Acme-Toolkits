@@ -64,6 +64,14 @@ public class InventorToolkitPublishService implements AbstractUpdateService<Inve
 			errors.state(request, allInventionsPublished, "*", "inventor.toolkit.form.error.not-all-published");
 		}
 		
+		{
+			Boolean isSpam;
+			
+			isSpam = entity.isSpam(this.repository.getSystemConfiguration());
+			
+			errors.state(request, !isSpam, "*", "inventor.toolkit.form.error.spam");
+		}
+		
 	}
 
 	@Override

@@ -51,6 +51,14 @@ public class InventorToolkitUpdateService implements AbstractUpdateService<Inven
 			errors.state(request, existing == null || existing.getId() == entity.getId(), "code", "inventor.toolkit.form.error.duplicated");
 		}
 		
+		{
+			Boolean isSpam;
+			
+			isSpam = entity.isSpam(this.repository.getSystemConfiguration());
+			
+			errors.state(request, !isSpam, "*", "inventor.toolkit.form.error.spam");
+		}
+		
 	}
 
 	@Override
