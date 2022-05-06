@@ -21,5 +21,3 @@
 	<acme:list-column code="any.toolkit.list.label.title" path="title" width="25%"/>
 	<acme:list-column code="any.toolkit.list.label.description" path="description" width="70%"/>
 </acme:list>
-
-<acme:button code="inventor.toolkit.list.button.create" action="link"/>

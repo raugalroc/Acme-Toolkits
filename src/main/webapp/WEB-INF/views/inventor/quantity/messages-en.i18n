@@ -1,0 +1,15 @@
+inventor.quantity.list.label.invention.code = Invention code
+inventor.quantity.list.label.numberOfQuantity = Quantity
+
+inventor.quantity.list.button.create = Create
+
+inventor.quantity.form.label.invention.code = Invention code
+inventor.quantity.form.label.numberOfQuantity = Quantity
+
+inventor.quantity.form.button.update = Update
+inventor.quantity.form.button.delete = Delete
+inventor.quantity.form.button.create = Create
+
+inventor.quantity.form.error.invalid = This code does not correspond to any existing invention
+inventor.quantity.form.error.exceed = The quantity of a component can not be more than 1
+inventor.quantity.form.error.duplicated = You already have this invention in use; use another or update that one

@@ -1,48 +1,44 @@
-package acme.features.inventor.toolkits;
+package acme.features.inventor.quantity;
 
 import javax.annotation.PostConstruct;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
-import acme.entities.toolkits.Toolkit;
+import acme.entities.quantity.Quantity;
 import acme.framework.controllers.AbstractController;
 import acme.roles.Inventor;
 
 @Controller
-public class InventorToolkitController extends AbstractController<Inventor, Toolkit> {
+public class InventorQuantityController extends AbstractController<Inventor, Quantity> {
 
 	// Internal state ------------------------------------------------------------
 	
 	@Autowired
-	protected InventorToolkitShowService		showService;
+	protected InventorQuantityListService		listService;
 	
 	@Autowired
-	protected InventorToolkitCreateService		createService;
+	protected InventorQuantityShowService		showService;
 	
 	@Autowired
-	protected InventorToolkitUpdateService		updateService;
+	protected InventorQuantityCreateService		createService;
 	
 	@Autowired
-	protected InventorToolkitDeleteService		deleteService;
+	protected InventorQuantityUpdateService		updateService;
 	
 	@Autowired
-	protected InventorToolkitListMineService 	listMineService;
+	protected InventorQuantityDeleteService		deleteService;
 	
-	@Autowired
-	protected InventorToolkitPublishService		publishService;
 	
 	// Constructors --------------------------------------------------------------
 
 	@PostConstruct
 	protected void initialise() {
+		super.addCommand("list", this.listService);
 		super.addCommand("show", this.showService);
 		super.addCommand("create", this.createService);
 		super.addCommand("update", this.updateService);
 		super.addCommand("delete", this.deleteService);
-
-		super.addCommand("list-mine", "list", this.listMineService);
-		super.addCommand("publish", "update", this.publishService);
 	}
 	
 }
