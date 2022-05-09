@@ -29,3 +29,6 @@ inventor.patronage.form.label.status = Estado
 inventor.patronage.form.label.legalStuff = Asuntos legales
 inventor.patronage.form.label.budget = Presupuesto total
 inventor.patronage.form.label.creationMoment = Fecha creación
+
+inventor.patronage.form.label.editStatus = Seleccione Estado
+inventor.patronage.form.button.update = Actualizar

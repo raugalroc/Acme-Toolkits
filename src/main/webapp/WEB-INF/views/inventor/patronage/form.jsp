@@ -16,8 +16,19 @@
 <%@taglib prefix="acme" uri="urn:jsptagdir:/WEB-INF/tags"%>
 
 <acme:form>
-	<acme:input-textbox code="inventor.patronage.form.label.status"
-		path="status" />
+
+	<jstl:if test="${status != 'PROPOSED'}">
+		<acme:input-textbox code="inventor.patronage.form.label.status" path="status"/>
+	</jstl:if>
+	
+	<jstl:if test="${status == 'PROPOSED'}">
+		<acme:input-select code="inventor.patronage.form.label.editStatus" path="status">
+			<acme:input-option code="PROPOSED" value="PROPOSED"/>
+			<acme:input-option code="ACCEPTED" value="ACCEPTED"/>
+			<acme:input-option code="DENIED" value="DENIED"/>
+		</acme:input-select>		
+	</jstl:if>
+	
 	<acme:input-textbox code="inventor.patronage.form.label.legalStuff"
 		path="legalStuff" />
 	<acme:input-money code="inventor.patronage.form.label.budget"
@@ -33,5 +44,7 @@
 		path="endTime" />
 
 	<acme:input-url code="inventor.patronage.form.label.link" path="link" />
+	
+	<acme:submit test="${acme:anyOf(command, 'show, update') && status == 'PROPOSED'}" code="inventor.patronage.form.button.update" action="/inventor/patronage/update"/>
 	
 </acme:form>

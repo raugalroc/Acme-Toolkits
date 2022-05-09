@@ -29,3 +29,6 @@ inventor.patronage.form.label.status = Status
 inventor.patronage.form.label.legalStuff = Legal stuff
 inventor.patronage.form.label.budget = Total budged
 inventor.patronage.form.label.creationTime = Creation date
+
+inventor.patronage.form.label.editStatus = Select Status
+inventor.patronage.form.button.update = Update
