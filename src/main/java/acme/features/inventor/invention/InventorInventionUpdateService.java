@@ -85,6 +85,8 @@ public class InventorInventionUpdateService implements AbstractUpdateService<Inv
 			acceptedCurrencies=new HashSet<String>();
 			Collections.addAll(acceptedCurrencies, acceptedCurrenciesSt);
 			
+			errors.state(request, entity.getRetailPrice().getAmount()>0., "retailPrice", "inventor.invention.form.error.retailPrice.negative");
+			
 			errors.state(request, acceptedCurrencies.contains(entity.getRetailPrice().getCurrency()) , "retailPrice", "inventor.invention.form.error.retailPrice.invalid");
 		}
 		
