@@ -51,6 +51,7 @@ public class Invention extends AbstractEntity {
 	@Length(min = 0, max = 255)
 	protected String			description;
 	
+	@NotNull
 	@Valid
 	protected Money				retailPrice;
 	

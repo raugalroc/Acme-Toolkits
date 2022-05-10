@@ -4,7 +4,7 @@
 <%@taglib prefix="acme" uri="urn:jsptagdir:/WEB-INF/tags"%>
 
 <acme:form>
-	<acme:input-textbox code="inventor.invention.form.label.code" path="code"/>
+	<acme:input-textbox placeholder="ABC-123-A" code="inventor.invention.form.label.code" path="code"/>
 	<acme:input-textbox code="inventor.invention.form.label.name" path="name"/>
 	<acme:input-textbox code="inventor.invention.form.label.technology" path="technology"/>
 	<acme:input-textarea code="inventor.invention.form.label.description" path="description"/>

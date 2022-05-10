@@ -75,7 +75,7 @@ public class InventorInventionCreateService implements AbstractCreateService<Inv
 			Invention existing;
 			
 			existing=this.repository.findOneComponentByCode(entity.getCode());
-			errors.state(request, existing == null || existing.getId() == entity.getId(), "code", "inventor.invention.form.error.code.duplicated");
+			errors.state(request, existing == null, "code", "inventor.invention.form.error.code.duplicated");
 		}
 		
 		if (!errors.hasErrors("retailPrice")) {
@@ -83,6 +83,8 @@ public class InventorInventionCreateService implements AbstractCreateService<Inv
 			final String[] acceptedCurrenciesSt=this.repository.findAcceptedCurrencies().split(";");
 			acceptedCurrencies=new HashSet<String>();
 			Collections.addAll(acceptedCurrencies, acceptedCurrenciesSt);
+			
+			errors.state(request, entity.getRetailPrice().getAmount()>0., "retailPrice", "inventor.invention.form.error.retailPrice.negative");
 			
 			errors.state(request, acceptedCurrencies.contains(entity.getRetailPrice().getCurrency()) , "retailPrice", "inventor.invention.form.error.retailPrice.invalid");
 		}

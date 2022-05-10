@@ -25,5 +25,6 @@ inventor.invention.form.button.create = Crear Invención
 inventor.invention.form.error.code.duplicated = Este código está cogido
 inventor.invention.form.error.retailPrice.invalid = El tipo de moneda no está soportado por el sistema
 inventor.invention.form.error.spam = Esta caja de herramientas es considerada como spam
+inventor.invention.form.error.retailPrice.negative = La cantidad no puede ser negativa
 
 inventor.invention.form.button.create = Crear
