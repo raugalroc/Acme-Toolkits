@@ -31,6 +31,7 @@ master.menu.anonymous.invention.list-component = List of components
 master.menu.anonymous.invention.list-tool = List of tools
 master.menu.anonymous.toolkits.list-published-toolkits = Published toolkits
 master.menu.anonymous.chirp.list = Recent chirps
+master.menu.anonymous.chirp.create = Create a chirp
 
 # master.menu.authenticated ##########################################################
 master.menu.authenticated = Authenticated
