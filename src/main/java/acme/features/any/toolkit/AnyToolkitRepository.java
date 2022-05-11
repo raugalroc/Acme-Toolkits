@@ -6,6 +6,8 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
 import acme.entities.inventions.Invention;
+import acme.entities.quantity.Quantity;
+import acme.entities.systemConfiguration.SystemConfiguration;
 import acme.entities.toolkits.Toolkit;
 import acme.framework.repositories.AbstractRepository;
 
@@ -21,7 +23,10 @@ public interface AnyToolkitRepository extends AbstractRepository{
 	@Query("SELECT q.invention  FROM Quantity q WHERE q.toolkit.id= :toolkitId")
 	Collection<Invention> findManyInventionsByToolkitId(int toolkitId);
 
-	@Query("SELECT sum(q.invention.retailPrice.amount*q.numberOfQuantity) FROM Quantity q WHERE q.toolkit.id = :toolkitId")
-	Double findTotalRetailPriceByToolkitId(int toolkitId);
+	@Query("SELECT q FROM Quantity q WHERE q.toolkit.id = ?1")
+	Collection<Quantity> findManyQuantitiesByToolkitId(int id);
+	
+	@Query("SELECT c FROM SystemConfiguration c")
+	SystemConfiguration getSystemConfiguration();
 
 }

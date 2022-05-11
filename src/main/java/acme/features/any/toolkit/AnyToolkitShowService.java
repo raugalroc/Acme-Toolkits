@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.toolkits.Toolkit;
+import acme.forms.MoneyExchange;
 import acme.framework.components.models.Model;
 import acme.framework.controllers.Request;
 import acme.framework.roles.Any;
@@ -35,8 +36,16 @@ public class AnyToolkitShowService implements AbstractShowService<Any, Toolkit>{
 		assert request != null;
 		assert entity != null;
 		assert model != null;
-		final Double totalPrice = this.repository.findTotalRetailPriceByToolkitId(entity.getId());
-		model.setAttribute("totalPrice", totalPrice);
+		
+		final String defaultCurrency = this.repository.getSystemConfiguration().getSystemCurrency();
+		final Double totalPrice = this.repository.findManyQuantitiesByToolkitId(entity.getId()).stream()
+										.mapToDouble(q -> MoneyExchange.of(MoneyExchange.moneyOf(
+																					q.getInvention().getRetailPrice().getAmount() * q.getNumberOfQuantity(), 
+																					q.getInvention().getRetailPrice().getCurrency()), 
+																			defaultCurrency).execute().getTarget().getAmount())
+										.sum();
+		
+		model.setAttribute("totalPrice", MoneyExchange.moneyOf(totalPrice, defaultCurrency));
 		model.setAttribute("id", entity.getId());
 		request.unbind(entity, model, "code", "title", "description","assemblyNotes","link");
 		

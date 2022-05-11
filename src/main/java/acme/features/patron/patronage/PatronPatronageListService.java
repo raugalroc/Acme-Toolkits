@@ -6,8 +6,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.patronage.Patronage;
+import acme.forms.MoneyExchange;
 import acme.framework.components.models.Model;
 import acme.framework.controllers.Request;
+import acme.framework.datatypes.Money;
 import acme.framework.services.AbstractListService;
 import acme.roles.Patron;
 
@@ -47,7 +49,12 @@ public class PatronPatronageListService implements AbstractListService<Patron, P
 				assert entity != null;
 				assert model != null;
 
-				request.unbind(entity, model, "status", "code", "legalStuff", "budget", "creationTime", "startTime", "endTime");
+				final String defaultCurrency = this.repository.getSystemConfiguration().getSystemCurrency();
+				
+				final Money budget = MoneyExchange.of(entity.getBudget(), defaultCurrency).execute().getTarget();
+				
+				model.setAttribute("budget", budget);
+				request.unbind(entity, model, "status", "code", "legalStuff", "creationTime", "startTime", "endTime");
 			}
 
 }
