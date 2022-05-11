@@ -4,8 +4,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.inventions.Invention;
+import acme.forms.MoneyExchange;
 import acme.framework.components.models.Model;
 import acme.framework.controllers.Request;
+import acme.framework.datatypes.Money;
 import acme.framework.roles.Any;
 import acme.framework.services.AbstractShowService;
 import acme.roles.Inventor;
@@ -52,7 +54,12 @@ public class AnyInventionShowService implements AbstractShowService<Any, Inventi
 				final String inventorSurname = inventor.getUserAccount().getIdentity().getSurname();
 				final String inventorEmail = inventor.getUserAccount().getIdentity().getEmail();
 
-				request.unbind(entity, model, "code", "name", "technology", "description", "retailPrice", "link");
+				final String defaultCurrency = this.repository.getSystemConfiguration().getSystemCurrency();
+				
+				final Money retailPrice = MoneyExchange.of(entity.getRetailPrice(), defaultCurrency).execute().getTarget();
+				
+				model.setAttribute("retailPrice", retailPrice);
+				request.unbind(entity, model, "code", "name", "technology", "description", "link");
 				model.setAttribute("inventorName", inventorName);
 				model.setAttribute("surname", inventorSurname);
 				model.setAttribute("email", inventorEmail);
