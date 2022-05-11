@@ -20,6 +20,8 @@ any.invention.form.label.author = Autor:
 any.invention.form.label.body = Cuerpo:
 any.invention.form.label.email = Email:
 
+any.chirp.form.label.accept= Confirmar creación
+
 any.chirp.form.label.creationMoment = Momento de creación
 any.chirp.form.label.title = Título
 any.chirp.form.label.author = Autor
@@ -27,3 +29,5 @@ any.chirp.form.label.body = Cuerpo
 any.chirp.form.label.email = Email
 
 any.chirp.form.button.create = Crear
+
+any.chirp.accept.error = Debe confirmar la creación 

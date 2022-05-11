@@ -58,6 +58,9 @@ public class AnyChirpCreateService implements AbstractCreateService<Any, Chirp>{
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
+		
+		final boolean accept = request.getModel().getBoolean("accept");
+		errors.state(request, accept, "accept", "any.chirp.accept.error");
 
 	}
 	
@@ -68,6 +71,7 @@ public class AnyChirpCreateService implements AbstractCreateService<Any, Chirp>{
 		assert model != null;
 
 		request.unbind(entity, model, "title", "author", "body", "email");
+		model.setAttribute("accept", false);
 	}
 
 	@Override
