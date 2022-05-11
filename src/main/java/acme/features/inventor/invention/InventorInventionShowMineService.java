@@ -4,8 +4,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.inventions.Invention;
+import acme.forms.MoneyExchange;
 import acme.framework.components.models.Model;
 import acme.framework.controllers.Request;
+import acme.framework.datatypes.Money;
 import acme.framework.entities.Principal;
 import acme.framework.services.AbstractShowService;
 import acme.roles.Inventor;
@@ -58,7 +60,12 @@ public class InventorInventionShowMineService implements AbstractShowService<Inv
 		assert entity != null;
 		assert model != null;
 		
-		request.unbind(entity, model, "code", "name", "technology", "description", "retailPrice", "link", "inventionType", "published");
+		final String defaultCurrency = this.repository.getSystemConfiguration().getSystemCurrency();
+		
+		final Money retailPrice = MoneyExchange.of(entity.getRetailPrice(), defaultCurrency).execute().getTarget();
+		
+		model.setAttribute("retailPrice", retailPrice);
+		request.unbind(entity, model, "code", "name", "technology", "description", "link", "inventionType", "published");
 	}
 	
 }
