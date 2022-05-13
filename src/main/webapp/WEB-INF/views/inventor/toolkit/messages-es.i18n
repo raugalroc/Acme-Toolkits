@@ -19,5 +19,6 @@ inventor.toolkit.form.button.publish = Publicar
 inventor.toolkit.form.button.create = Crear
 
 inventor.toolkit.form.error.duplicated = Este código ya está en uso
+inventor.toolkit.form.error.zero-inventions = No hay ninguna invención asociada a esta caja de herramientas
 inventor.toolkit.form.error.not-all-published = Hay invenciones sin publicar
 inventor.toolkit.form.error.spam = Esta caja de herramientas es considerada como spam
