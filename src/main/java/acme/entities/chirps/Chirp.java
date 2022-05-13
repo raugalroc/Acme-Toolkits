@@ -75,7 +75,7 @@ public class Chirp extends AbstractEntity {
 			pattern = java.util.regex.Pattern.compile(word, java.util.regex.Pattern.CASE_INSENSITIVE);
 			matcher = pattern.matcher(text);
 			
-			while (matcher.find()) {weakMatches++;};
+			while (matcher.find()) {weakMatches += term.split("\\s+").length;};
 		}
 		final double weakRatio = weakMatches / numberOfWords;
 		if (weakRatio > weakThreshold) return true;
@@ -85,7 +85,7 @@ public class Chirp extends AbstractEntity {
 			pattern = java.util.regex.Pattern.compile(word, java.util.regex.Pattern.CASE_INSENSITIVE);
 			matcher = pattern.matcher(text);
 			
-			while (matcher.find()) {strongMatches++;};
+			while (matcher.find()) {strongMatches += term.split("\\s+").length;};
 		}
 		final double strongRatio = strongMatches / numberOfWords;
 		if (strongRatio > strongThreshold) return true;

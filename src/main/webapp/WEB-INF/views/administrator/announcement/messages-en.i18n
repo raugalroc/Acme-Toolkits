@@ -16,3 +16,5 @@ administrator.announcement.form.label.confirmation = Confirm that the announceme
 administrator.announcement.form.label.notcritic= Not critic
 
 administrator.announcement.form.button.create = Create
+
+administrator.announcement.form.error.spam = This announcement is considered as spam

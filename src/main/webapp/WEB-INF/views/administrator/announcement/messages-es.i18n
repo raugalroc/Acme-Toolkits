@@ -17,4 +17,4 @@ administrator.announcement.form.label.notcritic= No crítico
 
 administrator.announcement.form.button.create = Crear
  
-
+administrator.announcement.form.error.spam = Este anuncio es considerado como spam

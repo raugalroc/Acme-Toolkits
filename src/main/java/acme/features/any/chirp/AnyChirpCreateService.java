@@ -59,8 +59,18 @@ public class AnyChirpCreateService implements AbstractCreateService<Any, Chirp>{
 		assert entity != null;
 		assert errors != null;
 		
-		final boolean accept = request.getModel().getBoolean("accept");
-		errors.state(request, accept, "accept", "any.chirp.accept.error");
+		{
+			final boolean accept = request.getModel().getBoolean("accept");
+			errors.state(request, accept, "accept", "any.chirp.accept.error");
+		}
+			
+		{
+			Boolean isSpam;
+			
+			isSpam = entity.isSpam(this.repository.getSystemConfiguration());
+			
+			errors.state(request, !isSpam, "*", "any.chirp.form.error.spam");
+		}
 
 	}
 	

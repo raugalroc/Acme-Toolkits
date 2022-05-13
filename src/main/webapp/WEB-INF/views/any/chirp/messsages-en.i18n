@@ -8,17 +8,11 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-any.invention.list.label.creationMoment = Creation Moment
-any.invention.list.label.title = Title
-any.invention.list.label.author = Author
-any.invention.list.label.body = Body
-any.invention.list.label.email = Email
-
-any.invention.form.label.creationMoment = Creation Moment:
-any.invention.form.label.title = Title:
-any.invention.form.label.author = Author:
-any.invention.form.label.body = Body:
-any.invention.form.label.email = Email:
+any.chirp.list.label.creationMoment = Creation Moment
+any.chirp.list.label.title = Title
+any.chirp.list.label.author = Author
+any.chirp.list.label.body = Body
+any.chirp.list.label.email = Email
 
 any.chirp.form.label.accept= Confirm creation
 
@@ -31,4 +25,4 @@ any.chirp.form.label.email = Email
 any.chirp.form.button.create = Create
 
 any.chirp.accept.error = Must confirm the creation
- 
+any.chirp.form.error.spam = This chirp is considered as spam
