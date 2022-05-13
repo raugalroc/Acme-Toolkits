@@ -7,6 +7,7 @@ import org.springframework.stereotype.Repository;
 
 import acme.entities.inventions.Invention;
 import acme.entities.quantity.Quantity;
+import acme.entities.systemConfiguration.SystemConfiguration;
 import acme.entities.toolkits.Toolkit;
 import acme.framework.repositories.AbstractRepository;
 
@@ -30,5 +31,8 @@ public interface InventorQuantityRepository extends AbstractRepository {
 
 	@Query("SELECT COUNT(*) FROM Quantity q WHERE q.invention.id = ?1 AND q.toolkit.id = ?2")
 	int countByInventionIdAndToolkitId(int inventionId, int toolkitId);
+
+	@Query("SELECT c FROM SystemConfiguration c")
+	SystemConfiguration getSystemConfiguration();
 
 }

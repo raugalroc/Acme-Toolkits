@@ -61,6 +61,7 @@ public class InventorToolkitPublishService implements AbstractUpdateService<Inve
 			inventions = this.repository.findManyInventionsByToolkitId(entity.getId());
 			allInventionsPublished = inventions.stream().allMatch(Invention::getPublished);
 			
+			errors.state(request, !inventions.isEmpty(), "*", "inventor.toolkit.form.error.zero-inventions");
 			errors.state(request, allInventionsPublished, "*", "inventor.toolkit.form.error.not-all-published");
 		}
 		

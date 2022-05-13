@@ -1,4 +1,7 @@
-inventor.quantity.list.label.invention.code = Invention code
+inventor.quantity.list.label.invention.code = Code
+inventor.quantity.list.label.invention.name = Name
+inventor.quantity.list.label.invention.technology = Technology
+inventor.quantity.list.label.invention.retailPrice = Price
 inventor.quantity.list.label.numberOfQuantity = Quantity
 
 inventor.quantity.list.button.create = Create

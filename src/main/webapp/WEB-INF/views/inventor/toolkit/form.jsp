@@ -9,7 +9,9 @@
 	<acme:input-textbox code="inventor.toolkit.form.label.description" path="description" />
 	<acme:input-textbox code="inventor.toolkit.form.label.assembly-notes" path="assemblyNotes" />
 	<acme:input-url code="inventor.toolkit.form.label.link" path="link" />
-	<acme:input-double code="inventor.toolkit.form.label.total-price" path="totalPrice" readonly="true"/>
+	<jstl:if test="${command != 'create'}">
+		<acme:input-double code="inventor.toolkit.form.label.total-price" path="totalPrice" readonly="true"/>
+	</jstl:if>
 	
 	<jstl:choose>	 
 		<jstl:when test="${command == 'show' && published == true}">
