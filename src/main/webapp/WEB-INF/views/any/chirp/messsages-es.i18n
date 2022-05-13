@@ -8,17 +8,11 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-any.invention.list.label.creationMoment = Momento de creación
-any.invention.list.label.title = Título
-any.invention.list.label.author = Autor
-any.invention.list.label.body = Cuerpo
-any.invention.list.label.email = Email
-
-any.invention.form.label.creationMoment = Momento de creación:
-any.invention.form.label.title = Título:
-any.invention.form.label.author = Autor:
-any.invention.form.label.body = Cuerpo:
-any.invention.form.label.email = Email:
+any.chirp.list.label.creationMoment = Momento de creación
+any.chirp.list.label.title = Título
+any.chirp.list.label.author = Autor
+any.chirp.list.label.body = Cuerpo
+any.chirp.list.label.email = Email
 
 any.chirp.form.label.accept= Confirmar creación
 
@@ -30,4 +24,5 @@ any.chirp.form.label.email = Email
 
 any.chirp.form.button.create = Crear
 
-any.chirp.accept.error = Debe confirmar la creación 
+any.chirp.accept.error = Debe confirmar la creación
+any.chirp.form.error.spam = Este anuncio informal es considerado como spam

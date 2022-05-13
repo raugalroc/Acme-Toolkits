@@ -25,7 +25,7 @@ inventor.invention.form.button.create = Create Invention
 
 inventor.invention.form.error.code.duplicated = This code is taken
 inventor.invention.form.error.retailPrice.invalid = The currency is not support by the system
-inventor.invention.form.error.spam = This toolkit is considered as spam
+inventor.invention.form.error.spam = This invention is considered as spam
 inventor.invention.form.error.retailPrice.negative = The amount can not be negative
 
 inventor.invention.form.button.create = Create
