@@ -12,7 +12,7 @@ inventor.toolkit.form.label.total-price = Total Price
 inventor.toolkit.form.label.assembly-notes = Assembly Notes
 inventor.toolkit.form.label.link = Link
 
-inventor.toolkit.form.button.quantities = Inventions' quantities
+inventor.toolkit.form.button.quantities = Quantities of inventions
 inventor.toolkit.form.button.update = Update
 inventor.toolkit.form.button.delete = Delete
 inventor.toolkit.form.button.publish = Publish

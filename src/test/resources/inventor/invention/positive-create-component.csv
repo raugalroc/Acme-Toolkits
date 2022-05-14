@@ -4,6 +4,5 @@ recordIndex,name,code,technology,description,retail-price,link,invention-type,pu
 3,"nail","AAA-004-A","a","Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,","EUR 100.50","http://www.example.com",COMPONENT,false,Component,No
 4,"nail","AAA-005-A","a","a","EUR 100.50","http://www.example.com",COMPONENT,false,Component,No
 5,"nail","AAA-006-A","a","a","EUR 0.10","http://www.example.com",COMPONENT,true,Component,Yes
-6,"nail","AAA-007-A","a","a","USD 0.10","http://www.example.com",COMPONENT,false,Component,No
-7,"nail","AAA-008-A","a","a","EUR 1,000,000,000.10","http://www.example.com",COMPONENT,false,Component,No
-8,"nail","AAA-010-A","a","zZZzaAAabBBbBBbDDDdDF","EUR 100.50","http://www.example.com",COMPONENT,true,Component,Yes
+6,"nail","AAA-008-A","a","a","EUR 1,000,000,000.10","http://www.example.com",COMPONENT,false,Component,No
+7,"nail","AAA-010-A","a","zZZzaAAabBBbBBbDDDdDF","EUR 100.50","http://www.example.com",COMPONENT,true,Component,Yes
