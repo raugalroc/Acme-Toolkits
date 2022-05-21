@@ -18,12 +18,12 @@
 
 	<modelVersion>4.0.0</modelVersion>
 	
-	<name>Acme-Toolkits</name>
+	<name>Acme-Toolkits-D06</name>
 	<description>This is the Acme Toolkits project</description>
 
 	<groupId>Acme</groupId>	
-	<artifactId>Acme-Toolkits</artifactId>
-	<version>22.1</version>
+	<artifactId>Acme-Toolkits-D06</artifactId>
+	<version>22.5</version>
 	<packaging>war</packaging>
 
 	<parent>

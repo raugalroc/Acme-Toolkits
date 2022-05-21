@@ -11,22 +11,21 @@ public class AuthenticatedAnnouncementShowTest extends TestHarness{
 	@CsvFileSource(resources = "/authenticated/announcement/list.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
 	public void positiveInventorTest(final int key, final String creationMoment, final String title,
-		final String body, final String critical, final String link) 
+		final String body, final String critical, final String link)
 	{
-		super.signIn("inventor1", "inventor1");
-		
-		super.clickOnMenu("Inventor","List announcements");
-		super.checkListingExists();
-		super.sortListing(0, "asc");
-		super.clickOnListingRecord(key);
-		super.checkFormExists();
-		super.checkInputBoxHasValue("title", title);
-		super.checkInputBoxHasValue("creationMoment", creationMoment);
-		super.checkInputBoxHasValue("body", body);
-		super.checkInputBoxHasValue("isCritic", critical);
-		super.checkInputBoxHasValue("link", link);
+			super.signIn("inventor1", "inventor1");
+			
+			super.clickOnMenu("Inventor","List announcements");
+			super.checkListingExists();
+			super.sortListing(0, "asc");
+			super.clickOnListingRecord(key);
+			super.checkFormExists();
+			super.checkInputBoxHasValue("title", title);
+			super.checkInputBoxHasValue("creationMoment", creationMoment);
+			super.checkInputBoxHasValue("body", body);
+			super.checkInputBoxHasValue("isCritic", critical);
+			super.checkInputBoxHasValue("link", link);
 
-		
 		
 	}
 }

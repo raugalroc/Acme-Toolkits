@@ -19,6 +19,8 @@ public class PatronPatronageShowTest extends TestHarness{
 
 		super.clickOnMenu("Patron", "Patronage List");
 
+		super.sortListing(0, "desc");
+		
 		super.clickOnListingRecord(recordIndex);
 		super.checkFormExists();
 		super.checkInputBoxHasValue("status", status);
