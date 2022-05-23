@@ -31,6 +31,7 @@ master.menu.anonymous.invention.list-component = List of components
 master.menu.anonymous.invention.list-tool = List of tools
 master.menu.anonymous.toolkits.list-published-toolkits = Published toolkits
 master.menu.anonymous.chirp.list = Recent chirps
+master.menu.anonymous.chirp.create = Create a chirp
 
 # master.menu.authenticated ##########################################################
 master.menu.authenticated = Authenticated
@@ -48,7 +49,7 @@ master.menu.administrator.populate-initial = Populate DB (initial)
 master.menu.administrator.populate-sample = Populate DB (samples)
 master.menu.administrator.shut-down = Shut down
 master.menu.administrator.toolkits.list-published-toolkits = Published toolkits
-
+master.menu.administrator.announcement.create = Create announcement
 # master.menu.provider ########################################################
 
 master.menu.provider = Provider

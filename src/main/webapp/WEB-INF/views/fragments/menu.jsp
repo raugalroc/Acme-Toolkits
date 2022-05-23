@@ -32,6 +32,7 @@
 			<acme:menu-suboption code="master.menu.anonymous.invention.list-tool" action="/any/invention/list-tool"/>
 			<acme:menu-suboption code="master.menu.anonymous.toolkits.list-published-toolkits" action="/any/toolkit/list-published"/>
 			<acme:menu-suboption code="master.menu.anonymous.chirp.list" action="/any/chirp/list"/>
+			<acme:menu-suboption code="master.menu.anonymous.chirp.create" action="/any/chirp/create"/>
       
 		</acme:menu-option>
 
@@ -53,6 +54,8 @@
       		<acme:menu-suboption code="master.menu.anonymous.chirp.list" action="/any/chirp/list"/>
       		<acme:menu-separator/>
       		<acme:menu-suboption code="master.menu.authenticated.announcement.list" action="/authenticated/announcement/list"/>
+      		 <acme:menu-suboption code="master.menu.administrator.announcement.create" action="/administrator/announcement/create"/>
+      		
       		<acme:menu-suboption code="master.menu.authenticated.system-configuration" action="/authenticated/system-configuration/show"/>
 		</acme:menu-option>
 

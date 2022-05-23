@@ -31,6 +31,7 @@ master.menu.anonymous.invention.list-component = Lista de componentes
 master.menu.anonymous.invention.list-tool = Lista de herramientas
 master.menu.anonymous.toolkits.list-published-toolkits = Cajas de herramientas publicadas
 master.menu.anonymous.chirp.list = Chirps recientes
+master.menu.anonymous.chirp.create = Crear chirp
 
 # master.menu.authenticated ##########################################################
 master.menu.authenticated = Authenticated
@@ -48,7 +49,7 @@ master.menu.administrator.populate-initial = Poblar BD (inicial)
 master.menu.administrator.populate-sample = Poblar BD (ejemplos)
 master.menu.administrator.shut-down = Parar el sistema
 master.menu.administrator.toolkits.list-published-toolkits = Cajas de herramientas publicadas
-
+master.menu.administrator.announcement.create = Crear anuncio
 # master.menu.provider ########################################################
 
 master.menu.provider = Proveedor
