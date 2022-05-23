@@ -7,3 +7,6 @@ inventor.patronage-report.form.label.creationMoment = Creation Moment:
 inventor.patronage-report.form.label.memorandum = Memorandum:
 inventor.patronage-report.form.label.link = Link:
 inventor.patronage-report.form.label.patronage.code = Patronage code:
+inventor.patronage-report.form.button.create = Create 
+
+inventor.patronage-report.form.label.confirmation = Confirm that the patronage report is correct
