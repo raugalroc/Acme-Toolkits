@@ -24,3 +24,15 @@ patron.patronage.form.label.inventor.name = Nombre
 patron.patronage.form.label.inventor.surname = Apellidos
 patron.patronage.form.label.inventor.email = Email
 patron.patronage.form.label.inventor.company = Compañía
+
+patron.patronage.form.label.select.inventor = Inventor
+
+patronage.patronage.form.error.code.duplicated = El código ya existe
+patron.patronage.form.error.startTime = Debe haber un mes entre el momento de creación y el comienzo de la esponsorización
+patron.patronage.form.error.endTime = El momento final no puede ser antes del comienzo
+patronage.patronage.form.error.budget.negative = La cantidad no puede ser negativa
+
+patron.patronage.form.button.create = Crear esponsorización
+patron.patronage.form.button.delete = Borrar esponsorización
+patron.patronage.form.button.publish = Publicar esponsorización
+patron.patronage.form.button.update = Actualizar esponsorización
