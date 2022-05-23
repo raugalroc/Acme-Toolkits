@@ -32,3 +32,4 @@ inventor.patronage.form.label.creationTime = Creation date
 
 inventor.patronage.form.label.editStatus = Select Status
 inventor.patronage.form.button.update = Update
+inventor.patronage.form.button.patronageReport = Create Patronage Report
