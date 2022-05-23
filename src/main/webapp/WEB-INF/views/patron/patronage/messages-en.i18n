@@ -24,4 +24,16 @@ patron.patronage.form.label.inventor.name = Name
 patron.patronage.form.label.inventor.surname = Surname
 patron.patronage.form.label.inventor.email = Email
 patron.patronage.form.label.inventor.company = Company
+patron.patronage.form.label.published = It is published?
 
+patron.patronage.form.label.select.inventor = Inventor
+
+patronage.patronage.form.error.code.duplicated = This code is taken
+patron.patronage.form.error.startTime = There must be 1 month between creation time and start time
+patron.patronage.form.error.endTime = End time can not be after start time
+patronage.patronage.form.error.budget.negative = The amount can not be negative
+
+patron.patronage.form.button.create = Create Patronage
+patron.patronage.form.button.delete = Delete Patronage
+patron.patronage.form.button.publish = Publish Patronage
+patron.patronage.form.button.update = Update Patronage

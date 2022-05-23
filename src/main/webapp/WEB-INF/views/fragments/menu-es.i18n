@@ -78,6 +78,7 @@ master.menu.patron.patronages = Lista de esponsorizaciones
 master.menu.patron.patronage-report = Lista de informes de esponsorizaciones
 master.patron.patron-dashboard = Panel de Patrocinador
 master.menu.patron.toolkits.list-published-toolkits = Cajas de herramientas publicadas
+master.menu.patron.patronage.create = Crear esponsorización
 
 # master.menu.user-account ####################################################
 

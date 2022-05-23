@@ -78,6 +78,7 @@ master.menu.patron.patronages = Patronage List
 master.menu.patron.patronage-report = List my Patronage Reports
 master.patron.patron-dashboard = Patron Dashboard
 master.menu.patron.toolkits.list-published-toolkits = Published Toolkits
+master.menu.patron.patronage.create = Create Patronage
 
 # master.menu.user-account ####################################################
 
