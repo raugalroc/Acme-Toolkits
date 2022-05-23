@@ -32,3 +32,4 @@ inventor.patronage.form.label.creationMoment = Fecha creación
 
 inventor.patronage.form.label.editStatus = Seleccione Estado
 inventor.patronage.form.button.update = Actualizar
+inventor.patronage.form.button.patronageReport = Crear Informe de Esponsorización

@@ -39,6 +39,9 @@ public class InventorPatronageShowMineService implements AbstractShowService<Inv
 			assert request != null;
 			assert entity != null;
 			assert model != null;
+			
+			model.setAttribute("patronageId", entity.getId());
+
 
 			final String defaultCurrency = this.repository.getSystemConfiguration().getSystemCurrency();
 			

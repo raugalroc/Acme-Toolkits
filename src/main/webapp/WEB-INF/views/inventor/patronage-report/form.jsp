@@ -15,11 +15,21 @@
 <%@taglib prefix="jstl" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib prefix="acme" uri="urn:jsptagdir:/WEB-INF/tags"%>
 
-<acme:form readonly="${readonly}">
-	<acme:input-textbox code="inventor.patronage-report.form.label.sequenceNumber" path="sequenceNumber"/>
-	<acme:input-moment code="inventor.patronage-report.form.label.creationMoment" path="creationMoment"/>	
+<acme:form>
+	<acme:input-textbox code="inventor.patronage-report.form.label.sequenceNumber" readonly="true" path="sequenceNumber"/>
+	<acme:input-moment code="inventor.patronage-report.form.label.creationMoment" readonly="true" path="creationMoment"/>	
 	<acme:input-textarea  code="inventor.patronage-report.form.label.memorandum" path="memorandum"/>
 	<acme:input-url code="inventor.patronage-report.form.label.link" path="link"/>
-	<acme:input-textbox code="inventor.patronage-report.form.label.patronage.code" path="patronage.code"/>
+	<acme:input-textbox code="inventor.patronage-report.form.label.patronage.code" readonly="true" path="patronage.code"/>
+	
+	<jstl:if test="${!readonly}">
+		<acme:input-checkbox code="inventor.patronage-report.form.label.confirmation" path="confirmation"/>
+	</jstl:if>
+	
+	<jstl:choose>	 
+		<jstl:when test="${command == 'create'}">
+			<acme:submit code="inventor.patronage-report.form.button.create" action="/inventor/patronage-report/create?masterId=${patronageId}"/>
+		</jstl:when>		
+	</jstl:choose>
 	
 </acme:form>
