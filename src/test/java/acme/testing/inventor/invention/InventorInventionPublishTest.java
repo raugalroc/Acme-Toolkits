@@ -1,6 +1,7 @@
 package acme.testing.inventor.invention;
 
 import org.junit.jupiter.api.Order;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 
@@ -101,5 +102,11 @@ public class InventorInventionPublishTest extends TestHarness{
 		
 		super.signOut(); 
 
+	}
+	
+	@Test
+	@Order(50)
+	public void hackingTest() {
+		//Usar herramientas como PostMan para hacer una petición de publicar a un invention del que no sea propietario
 	}
 }
