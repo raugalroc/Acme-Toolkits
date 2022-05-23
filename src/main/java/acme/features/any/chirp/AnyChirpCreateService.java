@@ -1,6 +1,5 @@
 package acme.features.any.chirp;
 
-import java.util.Calendar;
 import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -44,10 +43,8 @@ public class AnyChirpCreateService implements AbstractCreateService<Any, Chirp>{
 		assert errors != null;
 		
 		Date creationMoment;
-		Calendar calendar;
-		creationMoment = new Date();
-		calendar = Calendar.getInstance();
-		creationMoment = calendar.getTime();
+
+		creationMoment = new Date(System.currentTimeMillis() - 1);
 		request.bind(entity, errors, "title", "author", "body", "email");
 		entity.setCreationMoment(creationMoment);
 		
@@ -88,7 +85,7 @@ public class AnyChirpCreateService implements AbstractCreateService<Any, Chirp>{
 	public void create(final Request<Chirp> request, final Chirp entity) {
 		assert request != null;
 		assert entity != null;
-
+	
 		this.repository.save(entity);
 	}
 

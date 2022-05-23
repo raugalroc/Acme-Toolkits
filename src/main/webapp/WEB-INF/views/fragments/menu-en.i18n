@@ -67,7 +67,7 @@ master.menu.inventor.toolkits.list-toolkits = List my toolkits
 master.menu.inventor.invention.list-tools = List my tools
 master.menu.inventor.invention.list-components = List my components
 master.menu.inventor.toolkits.list-published-toolkits = Published toolkits
-master.menu.inventor.patronage.list-patronages = Show my patroganes
+master.menu.inventor.patronage.list-patronages = Show my patronages
 master.menu.inventor.patronage-report = List Patronage Reports
 master.menu.inventor.invention.create = Create Invention
 
