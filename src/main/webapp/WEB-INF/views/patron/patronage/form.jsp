@@ -26,7 +26,7 @@
 		<acme:input-option code="patron.patronage.form.label.denied"
 			value="DENIED" selected="${ status == 'DENIED' }" />
 	</acme:input-select>
-
+	<acme:input-textbox code="patron.patronage.form.label.id"  path="id" readonly="true"/>
 	<acme:input-textbox code="patron.patronage.form.label.code" path="code" readonly="false"/>
 	<acme:input-textbox code="patron.patronage.form.label.legalStuff"
 		path="legalStuff" />
@@ -64,13 +64,13 @@
 				<acme:message code="patron.patronage.message.inventor" />
 			</h2>
 			<acme:input-textbox code="patron.patronage.form.label.inventor.name"
-				path="name" />
+				path="name" readonly="true"/>
 			<acme:input-textbox
-				code="patron.patronage.form.label.inventor.surname" path="surname" />
+				code="patron.patronage.form.label.inventor.surname" path="surname" readonly="true"/>
 			<acme:input-textbox code="patron.patronage.form.label.inventor.email"
-				path="email" />
+				path="email" readonly="true"/>
 			<acme:input-textbox
-				code="patron.patronage.form.label.inventor.company" path="company" />
+				code="patron.patronage.form.label.inventor.company" path="company" readonly="true"/>
 
 		</jstl:when>
 

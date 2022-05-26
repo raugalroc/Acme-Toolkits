@@ -38,10 +38,11 @@ public class PatronPatronageCreateService implements AbstractCreateService<Patro
 		assert entity != null;
 		assert errors != null;
 		
-		entity.setInventor(this.repository.findInventorByUsername(request.getModel().getAttribute("inventor").toString()));
+//		entity.setInventor(this.repository.findInventorByUsername(request.getModel().getAttribute("inventor").toString()));
 		
 		request.bind(entity, errors, "code", "legalStuff", "budget", "startTime", "endTime", "link");
-		
+		System.out.println(request.getModel().getAttribute("inventor").toString());
+		entity.setInventor(this.repository.findInventorByUsername(request.getModel().getAttribute("inventor").toString()));
 	}
 
 	@Override
@@ -52,8 +53,10 @@ public class PatronPatronageCreateService implements AbstractCreateService<Patro
 		
 		model.setAttribute("inventors", this.repository.findAllInventors());
 		
-		request.unbind(entity, model, "code", "legalStuff", "budget", "startTime", "endTime", "link", "published");
+		request.unbind(entity, model, "code", "legalStuff", "budget", "startTime", "endTime", "link", "published");		
+	
 	}
+	
 
 	@Override
 	public Patronage instantiate(final Request<Patronage> request) {
@@ -66,6 +69,7 @@ public class PatronPatronageCreateService implements AbstractCreateService<Patro
 		moment = new Date(System.currentTimeMillis() - 1);
 		startMoment = DateUtils.addMonths(moment, 1);
 		endMoment = DateUtils.addMonths(startMoment, 1);
+//		result.setInventor(this.repository.findInventorByUsername(request.getModel().getAttribute("inventor").toString()));
 		result.setPublished(false);
 		result.setStatus(PatronageStatus.PROPOSED);
 		result.setPatron(this.repository.findPatronById(request.getPrincipal().getActiveRoleId()));

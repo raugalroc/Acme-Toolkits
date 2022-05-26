@@ -24,6 +24,7 @@ public class PatronPatronagePublishService implements AbstractUpdateService<Patr
 	
 	@Override
 	public boolean authorise(final Request<Patronage> request) {
+		
 		assert request != null;
 		boolean result;
 		int patronageId;
@@ -31,7 +32,9 @@ public class PatronPatronagePublishService implements AbstractUpdateService<Patr
 		Patron patron;
 		
 		patronageId = request.getModel().getInteger("id");
+		System.out.println(patronageId);
 		patronage = this.repository.findPatronageById(patronageId);
+		System.out.println(patronage.toString());
 		patron = patronage.getPatron();
 		result = patronage.getPublished()==false && request.isPrincipal(patron);
 		
@@ -44,8 +47,7 @@ public class PatronPatronagePublishService implements AbstractUpdateService<Patr
 		assert entity != null;
 		assert errors != null;
 				
-		request.bind(entity, errors, "code", "legalStuff", "budget", "startTime", "endTime", "link");
-		entity.setInventor(this.repository.findInventorByUsername(request.getModel().getAttribute("inventor").toString()));
+		request.bind(entity, errors,"id", "code", "legalStuff", "budget", "startTime", "endTime", "link");	
 	}
 
 	@Override
@@ -54,9 +56,9 @@ public class PatronPatronagePublishService implements AbstractUpdateService<Patr
 		assert entity != null;
 		assert model!=null;
 		
-		request.unbind(entity, model, "code", "legalStuff", "budget", "startTime", "endTime", "link");
+		request.unbind(entity, model, "id", "code", "legalStuff", "budget", "startTime", "endTime", "link", "published");
 		model.setAttribute("inventors", this.repository.findAllInventors());
-		model.setAttribute("patronageId", entity.getId());
+//		model.setAttribute("id", entity.getId());
 	}
 
 	@Override
@@ -82,7 +84,7 @@ public class PatronPatronagePublishService implements AbstractUpdateService<Patr
 			Patronage exists;
 			
 			exists = this.repository.findOnePatronageByCode(entity.getCode());
-			errors.state(request, exists== null, "code", "patronage.patronage.form.error.duplicated");
+			errors.state(request, exists== null || exists.getId()==entity.getId(), "code", "patronage.patronage.form.error.duplicated");
 		}
 		
 		if(!errors.hasErrors("startTime")) {
@@ -116,15 +118,18 @@ public class PatronPatronagePublishService implements AbstractUpdateService<Patr
 			
 			errors.state(request, acceptedCurrencies.contains(entity.getBudget().getCurrency()) , "budget", "patronage.patronage.form.error.budget.invalid");
 		}
+	
 	}
 
 	@Override
 	public void update(final Request<Patronage> request, final Patronage entity) {
 		assert request != null;
 		assert entity != null;
-		
+
 		entity.setPublished(true);
 		this.repository.save(entity);
+		
+		
 	}
 
 }

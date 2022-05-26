@@ -25,6 +25,7 @@ patron.patronage.form.label.inventor.surname = Surname
 patron.patronage.form.label.inventor.email = Email
 patron.patronage.form.label.inventor.company = Company
 patron.patronage.form.label.published = It is published?
+patron.patronage.form.label.id= Id
 
 patron.patronage.form.label.select.inventor = Inventor
 

@@ -29,6 +29,7 @@ public class InventorInventionUpdateService implements AbstractUpdateService<Inv
 		Inventor inventor;
 		
 		masterId=request.getModel().getInteger("id");
+		System.out.println(masterId);
 		invention=this.repository.findOneInventionById(masterId);
 		inventor=invention.getInventor();
 		result=invention.getPublished()==false && request.isPrincipal(inventor);
