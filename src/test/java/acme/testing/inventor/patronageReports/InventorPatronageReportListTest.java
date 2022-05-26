@@ -19,7 +19,6 @@ public class InventorPatronageReportListTest extends TestHarness {
 
 		super.clickOnMenu("Inventor", "List Patronage Reports");
 		super.checkListingExists();
-		super.sortListing(0, "asc");
 	
 		super.checkColumnHasValue(recordIndex, 0, sequenceNumber);
 		super.checkColumnHasValue(recordIndex, 1, creationMoment);

@@ -13,7 +13,7 @@ public class PatronPatronDashboardShowTest extends TestHarness{
 		super.signIn("patron1", "patron1");
 		
 		super.clickOnMenu("Patron", "Patron Dashboard");
-		super.checkCurrentUrl("http://localhost:8081/acme-toolkits-d06-22.5/patron/patron-dashboard/show");
+		super.checkCurrentUrl("http://localhost:8081/acme-toolkits-22.1/patron/patron-dashboard/show");
 		super.checkNotPanicExists();
 		
 		super.signOut();

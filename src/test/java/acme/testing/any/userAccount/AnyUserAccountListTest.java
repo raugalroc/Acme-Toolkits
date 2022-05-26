@@ -13,7 +13,7 @@ public class AnyUserAccountListTest extends TestHarness {
 	@Order(10)
 	public void positiveAsAnonymous(final int recordIndex, final String username, final String name, final String surname, final String email, final String roles) {
 		super.clickOnMenu("Anonymous", "User Account");
-		super.checkCurrentUrl("http://localhost:8081/acme-toolkits-d06-22.5/any/user-account/list");
+		super.checkCurrentUrl("http://localhost:8081/acme-toolkits-22.1/any/user-account/list");
 		
 		super.checkListingExists();
 		super.checkNotListingEmpty();
@@ -34,7 +34,7 @@ public class AnyUserAccountListTest extends TestHarness {
 		super.signIn("inventor1", "inventor1");
 		
 		super.clickOnMenu("Inventor", "User Account");
-		super.checkCurrentUrl("http://localhost:8081/acme-toolkits-d06-22.5/any/user-account/list");
+		super.checkCurrentUrl("http://localhost:8081/acme-toolkits-22.1/any/user-account/list");
 		
 		super.checkListingExists();
 		super.checkNotListingEmpty();
@@ -55,7 +55,7 @@ public class AnyUserAccountListTest extends TestHarness {
 		super.signIn("administrator", "administrator");
 		
 		super.clickOnMenu("Administrator", "User Account");
-		super.checkCurrentUrl("http://localhost:8081/acme-toolkits-d06-22.5/any/user-account/list");
+		super.checkCurrentUrl("http://localhost:8081/acme-toolkits-22.1/any/user-account/list");
 		
 		super.checkListingExists();
 		super.checkNotListingEmpty();

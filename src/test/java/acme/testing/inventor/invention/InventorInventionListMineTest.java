@@ -20,7 +20,7 @@ public class InventorInventionListMineTest extends TestHarness {
 		super.signIn("inventor1", "inventor1");
 
 		super.clickOnMenu("Inventor", "List my tools");
-		super.checkCurrentUrl("http://localhost:8081/acme-toolkits-d06-22.5/inventor/invention/list-mine?type=TOOL");
+		super.checkCurrentUrl("http://localhost:8081/acme-toolkits-22.1/inventor/invention/list-mine?type=TOOL");
 		super.sortListing(0, "asc");
 		super.checkListingExists();
 		super.checkNotListingEmpty();
@@ -53,7 +53,7 @@ public class InventorInventionListMineTest extends TestHarness {
 		super.signIn("inventor1", "inventor1");
 
 		super.clickOnMenu("Inventor", "List my components");
-		super.checkCurrentUrl("http://localhost:8081/acme-toolkits-d06-22.5/inventor/invention/list-mine?type=COMPONENT");
+		super.checkCurrentUrl("http://localhost:8081/acme-toolkits-22.1/inventor/invention/list-mine?type=COMPONENT");
 		
 		super.checkListingExists();
 		super.checkNotListingEmpty();
@@ -87,7 +87,7 @@ public class InventorInventionListMineTest extends TestHarness {
 		super.signIn("inventor1", "inventor1");
 		
 		super.navigate("/inventor/invention/list-mine");
-		super.checkCurrentUrl("http://localhost:8081/acme-toolkits-d06-22.5/inventor/invention/list-mine?language=en&debug=true");
+		super.checkCurrentUrl("http://localhost:8081/acme-toolkits-22.1/inventor/invention/list-mine?language=en&debug=true");
 		super.checkListingExists();
 		super.checkListingEmpty();
 		super.sortListing(0, "asc");
@@ -95,13 +95,13 @@ public class InventorInventionListMineTest extends TestHarness {
 		this.navigateWithQuery();
 		
 		super.navigate("/inventor/invention/list-mine", "type=InvalidQuery");
-		super.checkCurrentUrl("http://localhost:8081/acme-toolkits-d06-22.5/inventor/invention/list-mine?language=en&debug=true&type=InvalidQuery");
+		super.checkCurrentUrl("http://localhost:8081/acme-toolkits-22.1/inventor/invention/list-mine?language=en&debug=true&type=InvalidQuery");
 		super.checkListingExists();
 		super.checkListingEmpty();
 		super.sortListing(0, "asc");
 		
 		super.navigate("/inventor/invention/list-mine", "type=CompONent");
-		super.checkCurrentUrl("http://localhost:8081/acme-toolkits-d06-22.5/inventor/invention/list-mine?language=en&debug=true&type=CompONent");
+		super.checkCurrentUrl("http://localhost:8081/acme-toolkits-22.1/inventor/invention/list-mine?language=en&debug=true&type=CompONent");
 		super.sortListing(0, "asc");
 		super.checkListingExists();
 		super.checkNotListingEmpty();

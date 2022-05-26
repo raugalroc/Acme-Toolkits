@@ -13,7 +13,7 @@ public class AdministratorAdministratorDashboardShowTest extends TestHarness {
 		super.signIn("administrator", "administrator");
 		
 		super.clickOnMenu("Administrator", "Administrator Dashboard");
-		super.checkCurrentUrl("http://localhost:8081/acme-toolkits-d06-22.5/administrator/administrator-dashboard/show");
+		super.checkCurrentUrl("http://localhost:8081/acme-toolkits-22.1/administrator/administrator-dashboard/show");
 		super.checkNotPanicExists();
 		
 		super.signOut();
