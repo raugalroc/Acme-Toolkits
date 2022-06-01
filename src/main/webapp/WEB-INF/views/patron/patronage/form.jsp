@@ -26,6 +26,10 @@
 		<acme:input-option code="patron.patronage.form.label.denied"
 			value="DENIED" selected="${ status == 'DENIED' }" />
 	</acme:input-select>
+	<acme:input-select code="patron.patronage.list.label.published" path="published">
+		<acme:input-option code="patron.patronage.form.label.true" value="true" selected="${published == true}"/>
+		<acme:input-option code="patron.patronage.form.label.false" value="false" selected="${published == false }"/>
+	</acme:input-select>
 	<acme:input-textbox code="patron.patronage.form.label.id"  path="id" readonly="true"/>
 	<acme:input-textbox code="patron.patronage.form.label.code" path="code" readonly="false"/>
 	<acme:input-textbox code="patron.patronage.form.label.legalStuff"
@@ -77,7 +81,7 @@
 	</jstl:choose>
 	
 	<jstl:choose>	 
-		<jstl:when test="${acme:anyOf(command, 'show, update, delete, publish')}">
+		<jstl:when test="${acme:anyOf(command, 'show, update, delete, publish') && published == false}">
 			<acme:submit code="patron.patronage.form.button.update" action="/patron/patronage/update"/>
 			<acme:submit code="patron.patronage.form.button.delete" action="/patron/patronage/delete"/>
 			<acme:submit code="patron.patronage.form.button.publish" action="/patron/patronage/publish"/>

@@ -54,7 +54,7 @@ public class PatronPatronageListService implements AbstractListService<Patron, P
 				final Money budget = MoneyExchange.of(entity.getBudget(), defaultCurrency).execute().getTarget();
 				
 				model.setAttribute("budget", budget);
-				request.unbind(entity, model, "status", "code", "legalStuff", "creationTime", "startTime", "endTime");
+				request.unbind(entity, model, "status", "code", "legalStuff", "creationTime", "startTime", "endTime", "published");
 			}
 
 }

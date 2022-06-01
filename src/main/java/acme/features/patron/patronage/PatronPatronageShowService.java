@@ -63,8 +63,8 @@ public class PatronPatronageShowService implements AbstractShowService<Patron, P
 					final String defaultCurrency = this.repository.getSystemConfiguration().getSystemCurrency();
 					
 					final Money budget = MoneyExchange.of(entity.getBudget(), defaultCurrency).execute().getTarget();
-					
-					request.unbind(entity, model, "status", "code", "legalStuff", "creationTime", "startTime", "endTime", "link");
+						
+					request.unbind(entity, model, "status", "code", "legalStuff", "creationTime", "startTime", "endTime", "link", "published");
 					request.unbind(inventor, model, "company");
 					
 					model.setAttribute("id", entity.getId());
