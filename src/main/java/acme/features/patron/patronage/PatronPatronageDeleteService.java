@@ -50,7 +50,6 @@ public class PatronPatronageDeleteService implements AbstractDeleteService<Patro
 		
 		request.unbind(entity, model, "code", "legalStuff", "budget", "startTime", "endTime", "link");
 		
-		model.setAttribute("patronageId", entity.getId());
 	}
 
 	@Override

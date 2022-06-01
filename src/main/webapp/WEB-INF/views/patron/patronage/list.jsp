@@ -18,6 +18,7 @@
 <acme:list>
 	<acme:list-column code="patron.patronage.list.label.status" path="status"/>
 	<acme:list-column code="patron.patronage.list.label.code" path="code"/>
+	<acme:list-column code="patron.patronage.list.label.published" path="published"/>
 	<acme:list-column code="patron.patronage.list.label.budget" path="budget"/>
 	<acme:list-column code="patron.patronage.list.label.legalStuff" path="legalStuff"/>
 	<acme:list-column code="patron.patronage.list.label.creationTime" path="creationTime"/>

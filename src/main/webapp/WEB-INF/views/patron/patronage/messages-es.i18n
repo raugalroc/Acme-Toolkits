@@ -10,6 +10,9 @@ patron.patronage.form.label.status = Estado:
 patron.patronage.form.label.proposed = Propuesto
 patron.patronage.form.label.accepted = Aceptado
 patron.patronage.form.label.denied = Rechazado
+patron.patronage.list.label.published = ¿Está publicado?
+patron.patronage.form.label.true = Sí
+patron.patronage.form.label.false = No
 patron.patronage.form.label.code = Código:
 patron.patronage.form.label.legalStuff = Asuntos Legales:
 patron.patronage.form.label.budget = Presupuesto:
@@ -24,6 +27,7 @@ patron.patronage.form.label.inventor.name = Nombre
 patron.patronage.form.label.inventor.surname = Apellidos
 patron.patronage.form.label.inventor.email = Email
 patron.patronage.form.label.inventor.company = Compañía
+patron.patronage.form.label.id = Id
 
 patron.patronage.form.label.select.inventor = Inventor
 

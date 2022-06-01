@@ -29,10 +29,12 @@ public class PatronPatronageUpdateService implements AbstractUpdateService<Patro
 		boolean result;
 		int patronageId;
 		Patronage patronage;
-		final Patron patron;
+		Patron patron;
 		
 		patronageId = request.getModel().getInteger("id");
+		System.out.println(patronageId);
 		patronage = this.repository.findPatronageById(patronageId);
+		System.out.println(patronage.toString());
 		patron = patronage.getPatron();
 		result = patronage.getPublished()==false && request.isPrincipal(patron);
 		
@@ -45,9 +47,7 @@ public class PatronPatronageUpdateService implements AbstractUpdateService<Patro
 		assert entity != null;
 		assert errors != null;
 				
-		request.bind(entity, errors, "code", "legalStuff", "budget", "startTime", "endTime", "link");
-		entity.setInventor(this.repository.findInventorByUsername(request.getModel().getAttribute("inventor").toString()));
-		
+		request.bind(entity, errors,"id", "code", "legalStuff", "budget", "startTime", "endTime", "link");	
 	}
 
 	@Override
@@ -56,9 +56,9 @@ public class PatronPatronageUpdateService implements AbstractUpdateService<Patro
 		assert entity != null;
 		assert model!=null;
 		
-		request.unbind(entity, model, "code", "legalStuff", "budget", "startTime", "endTime", "link", "published");
+		request.unbind(entity, model, "id", "code", "legalStuff", "budget", "startTime", "endTime", "link", "published");
 		model.setAttribute("inventors", this.repository.findAllInventors());
-		model.setAttribute("patronageId", entity.getId());
+//		model.setAttribute("id", entity.getId());
 	}
 
 	@Override
@@ -84,7 +84,7 @@ public class PatronPatronageUpdateService implements AbstractUpdateService<Patro
 			Patronage exists;
 			
 			exists = this.repository.findOnePatronageByCode(entity.getCode());
-			errors.state(request, exists== null, "code", "patronage.patronage.form.error.duplicated");
+			errors.state(request, exists== null || exists.getId()==entity.getId(), "code", "patronage.patronage.form.error.duplicated");
 		}
 		
 		if(!errors.hasErrors("startTime")) {
